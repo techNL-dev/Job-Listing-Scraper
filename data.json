@@ -1,8 +1,46 @@
 {
   "companies": [
     {
-      "Name": "Verafin",
-      "URL": "https://verafin.com/careers/"
+      "name": "Verafin",
+      "url": "https://verafin.com/careers/",
+      "listing class": "resource-base resource-job",
+      "data": {
+        "title": {
+          "selector": "table > tr > td > div.body > h3",
+          "indices": []
+        },
+        "location": {
+          "selector": "table > tr > td > div.body > p:nth-child(2)",
+          "indices": [10, -1]
+        },
+        "application date": null,
+        "posting date": null
+      },
+      "description": {
+        "selector": "table > tr > td > div.body",
+        "indices": [3]
+      }
+    },
+    {
+      "name": "CoLab Software",
+      "url": "https://www.colabsoftware.com/careers",
+      "listing class": "job-item w-dyn-item",
+      "data": {
+        "title": {
+          "selector": "div > div > div.job-title-div > h3",
+          "indices": []
+        },
+        "location": {
+          "selector": "div > div > div.job-hidden-div > div.location-div > div",
+          "indices": []
+        },
+        "application date": null,
+        "posting date": null
+      },
+      "description": {
+        "selector": "div > div > div.job-hidden-div > div.job-info-div",
+        "indices": []
+      }
     }
   ]
 }
