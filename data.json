@@ -19,7 +19,8 @@
       "description": {
         "selector": "table > tr > td > div.body",
         "indices": [2]
-      }
+      },
+      "apply link selector": "table > tr > td > div.foot > a"
     },
     {
       "name": "CoLab Software",
@@ -40,7 +41,8 @@
       "description": {
         "selector": "div > div > div.job-hidden-div > div.job-info-div",
         "indices": []
-      }
+      },
+      "apply link selector": "div > div > div.job-hidden-div > div.job-button-wrap > a"
     }
   ]
 }

@@ -27,6 +27,11 @@ def get_listing_description(listing: Tag, data: dict):
     return list(map(lambda x: str(x), children))
 
 
+def get_apply_link(listing: Tag, selector: str):
+    link_tag = listing.select(selector)[0]
+    return link_tag["href"]
+
+
 def main():
     output = {}
 
@@ -46,6 +51,9 @@ def main():
                     listing_data[key] = get_listing_data(listing, company["data"][key])
                 listing_data["description"] = get_listing_description(
                     listing, company["description"]
+                )
+                listing_data["apply link"] = get_apply_link(
+                    listing, company["apply link selector"]
                 )
                 listing_data_list.append(listing_data)
             output[company["name"]] = listing_data_list
