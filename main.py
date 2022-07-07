@@ -22,13 +22,8 @@ def get_listing_description(listing: Tag, data: dict):
     if data == None:
         return None
     description_parent = listing.select(data["selector"])[0]
-    children = description_parent.find_all()
+    children = description_parent.find_all(recursive=False)
     children = conditional_slice(children, data["indices"])
-    """print()
-    print()
-    print()
-    for child in children:
-        print(child)"""
     return list(map(lambda x: str(x), children))
 
 
