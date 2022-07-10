@@ -1,0 +1,13 @@
+name: Scrape Job Listings
+on:
+  schedule:
+    - cron: '30 2 * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scrape job listings
+        run: |
+          curl --request GET \
+          --url 'https://nl-job-listing-scraper.herokuapp.com/api' \
+          --header 'Authorization: ${{ secrets.API_SECRET_KEY }}'
