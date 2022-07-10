@@ -32,8 +32,9 @@ def get_apply_link(listing: Tag, selector: str):
     return link_tag["href"]
 
 
-def main():
+def scrape_listings():
     output = {}
+    count = 0
 
     with open("data.json", "r", encoding="utf-8") as data_json:
         data = json.loads(data_json.read())
@@ -43,6 +44,7 @@ def main():
             soup = BeautifulSoup(response.text, features="html.parser")
             listings = soup.find_all("div", {"class": company["listing class"]})
             print(f"{len(listings)} listings found...")
+            count += len(listings)
             listing_data_list = []
             listing: Tag
             for listing in listings:
@@ -66,7 +68,4 @@ def main():
     upload_listings(output)
 
     print()
-
-
-if __name__ == "__main__":
-    main()
+    return count
