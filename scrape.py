@@ -68,6 +68,4 @@ def scrape_listings():
     upload_listings(output)
 
     print()
-
-
-scrape_listings()
+    return count

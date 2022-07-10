@@ -1,9 +1,7 @@
 from pymongo.mongo_client import MongoClient
 import os
-from dotenv import load_dotenv
 from datetime import datetime
 
-load_dotenv()
 
 cluster = MongoClient(os.environ["MONGO_URI"])
 db = cluster["JobListingScraper"]
