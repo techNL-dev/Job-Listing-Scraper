@@ -7,6 +7,6 @@ class handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/plain")
         self.end_headers()
-        listing_count = scrape_listings()
-        self.wfile.write(f"Scraped {listing_count} job listings")
+        self.wfile.write("Started scraping job listings...".encode())
+        scrape_listings()
         return

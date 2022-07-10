@@ -61,11 +61,13 @@ def scrape_listings():
             output[company["name"]] = listing_data_list
             print()
 
-    with open("output.json", "w", encoding="utf-8") as output_json:
-        json.dump(output, output_json, ensure_ascii=True, indent=2)
+    """with open("output.json", "w", encoding="utf-8") as output_json:
+        json.dump(output, output_json, ensure_ascii=True, indent=2)"""
 
     delete_all_listings()
     upload_listings(output)
 
     print()
-    return count
+
+
+scrape_listings()
