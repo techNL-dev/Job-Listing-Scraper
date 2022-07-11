@@ -14,7 +14,7 @@ def upload_listings(data):
         listings = data[company]
         for listing in listings:
             listing["company"] = company
-            listing["date"] = datetime.now()
+            listing["posting date"] = datetime.now()
             all_listings.append(listing)
     listings_collection.insert_many(all_listings)
 

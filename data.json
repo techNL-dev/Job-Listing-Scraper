@@ -13,8 +13,7 @@
           "selector": "table > tr > td > div.body > p:nth-child(2)",
           "indices": [10, -1]
         },
-        "application date": null,
-        "posting date": null
+        "application date": null
       },
       "description": {
         "selector": "table > tr > td > div.body",
@@ -35,8 +34,7 @@
           "selector": "div > div > div.job-hidden-div > div.location-div > div",
           "indices": []
         },
-        "application date": null,
-        "posting date": null
+        "application date": null
       },
       "description": {
         "selector": "div > div > div.job-hidden-div > div.job-info-div",
