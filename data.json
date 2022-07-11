@@ -3,7 +3,11 @@
     {
       "name": "Verafin",
       "url": "https://verafin.com/careers/",
-      "listing class": "resource-base resource-job",
+      "listing": {
+        "class": "resource-base resource-job",
+        "tag": "div"
+      },
+      "details link": null,
       "data": {
         "title": {
           "selector": "table > tr > td > div.body > h3",
@@ -24,7 +28,11 @@
     {
       "name": "CoLab Software",
       "url": "https://www.colabsoftware.com/careers",
-      "listing class": "job-item w-dyn-item",
+      "listing": {
+        "class": "job-item w-dyn-item",
+        "tag": "div"
+      },
+      "details link": null,
       "data": {
         "title": {
           "selector": "div > div > div.job-title-div > h3",
@@ -41,6 +49,56 @@
         "indices": []
       },
       "apply link selector": "div > div > div.job-hidden-div > div.job-button-wrap > a"
+    },
+    {
+      "name": "Mysa",
+      "url": "https://getmysa.com/pages/careers/ca",
+      "listing": {
+        "class": "lever-job",
+        "tag": "li"
+      },
+      "details link": "a",
+      "data": {
+        "title": {
+          "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > div > div.sort-by-time.posting-category.medium-category-label",
+          "indices": [0, -2]
+        },
+        "application date": null
+      },
+      "description": {
+        "selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2)",
+        "indices": [0, -1]
+      },
+      "apply link selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
+    },
+    {
+      "name": "Milk Moovement",
+      "url": "https://jobs.lever.co/milk-moovement",
+      "listing": {
+        "class": "posting",
+        "tag": "div"
+      },
+      "details link": "a",
+      "data": {
+        "title": {
+          "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > div > div.sort-by-time.posting-category.medium-category-label",
+          "indices": [0, -2]
+        },
+        "application date": null
+      },
+      "description": {
+        "selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2)",
+        "indices": [0, -1]
+      },
+      "apply link selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
     }
   ]
 }
