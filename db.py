@@ -5,7 +5,7 @@ from datetime import datetime
 
 cluster = MongoClient(os.environ["MONGO_URI"])
 db = cluster["JobListingScraper"]
-listings_collection = db["Listings"]
+listing_collection = db["Listing"]
 
 
 def upload_listings(data):
@@ -16,8 +16,8 @@ def upload_listings(data):
             listing["company"] = company
             listing["posting_date"] = datetime.now()
             all_listings.append(listing)
-    listings_collection.insert_many(all_listings)
+    listing_collection.insert_many(all_listings)
 
 
 def delete_all_listings():
-    listings_collection.delete_many({})
+    listing_collection.delete_many({})
