@@ -64,9 +64,9 @@ def scrape_listings():
             listing: Tag
             for listing in listings:
                 listing_data = {}
-                if company["details link"] != None:
+                if company["details_link"] != None:
                     page_response = requests.get(
-                        listing.select(company["details link"])[0]["href"],
+                        listing.select(company["details_link"])[0]["href"],
                         headers=REQUEST_HEADERS,
                     )
                     page_soup = BeautifulSoup(
@@ -78,8 +78,8 @@ def scrape_listings():
                 listing_data["description"] = get_listing_description(
                     listing, company["description"]
                 )
-                listing_data["apply link"] = get_apply_link(
-                    listing, company["apply link selector"]
+                listing_data["apply_link"] = get_apply_link(
+                    listing, company["apply_link_selector"]
                 )
                 listing_data_list.append(listing_data)
             output[company["name"]] = listing_data_list

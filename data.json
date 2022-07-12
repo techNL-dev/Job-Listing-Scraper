@@ -7,7 +7,7 @@
         "class": "resource-base resource-job",
         "tag": "div"
       },
-      "details link": null,
+      "details_link": null,
       "data": {
         "title": {
           "selector": "table > tr > td > div.body > h3",
@@ -17,13 +17,13 @@
           "selector": "table > tr > td > div.body > p:nth-child(2)",
           "indices": [10, -1]
         },
-        "application date": null
+        "application_date": null
       },
       "description": {
         "selector": "table > tr > td > div.body",
         "indices": [2]
       },
-      "apply link selector": "table > tr > td > div.foot > a"
+      "apply_link_selector": "table > tr > td > div.foot > a"
     },
     {
       "name": "CoLab Software",
@@ -32,7 +32,7 @@
         "class": "job-item w-dyn-item",
         "tag": "div"
       },
-      "details link": null,
+      "details_link": null,
       "data": {
         "title": {
           "selector": "div > div > div.job-title-div > h3",
@@ -42,13 +42,13 @@
           "selector": "div > div > div.job-hidden-div > div.location-div > div",
           "indices": []
         },
-        "application date": null
+        "application_date": null
       },
       "description": {
         "selector": "div > div > div.job-hidden-div > div.job-info-div",
         "indices": []
       },
-      "apply link selector": "div > div > div.job-hidden-div > div.job-button-wrap > a"
+      "apply_link_selector": "div > div > div.job-hidden-div > div.job-button-wrap > a"
     },
     {
       "name": "Mysa",
@@ -57,7 +57,7 @@
         "class": "lever-job",
         "tag": "li"
       },
-      "details link": "a",
+      "details_link": "a",
       "data": {
         "title": {
           "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > h2",
@@ -67,13 +67,13 @@
           "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > div > div.sort-by-time.posting-category.medium-category-label",
           "indices": [0, -2]
         },
-        "application date": null
+        "application_date": null
       },
       "description": {
         "selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2)",
         "indices": [0, -1]
       },
-      "apply link selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
+      "apply_link_selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
     },
     {
       "name": "Milk Moovement",
@@ -82,7 +82,7 @@
         "class": "posting",
         "tag": "div"
       },
-      "details link": "a",
+      "details_link": "a",
       "data": {
         "title": {
           "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > h2",
@@ -92,13 +92,13 @@
           "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > div > div.sort-by-time.posting-category.medium-category-label",
           "indices": [0, -2]
         },
-        "application date": null
+        "application_date": null
       },
       "description": {
         "selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2)",
         "indices": [0, -1]
       },
-      "apply link selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
+      "apply_link_selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
     }
   ]
 }
