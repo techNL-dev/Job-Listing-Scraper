@@ -1,7 +1,7 @@
 import json
 import requests
 from bs4 import BeautifulSoup, Tag
-from db import upload_listings, delete_all_listings
+from db import upload_listings
 from selenium_scrape import get_page_body, quit_selenium
 
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -88,7 +88,6 @@ def scrape_listings():
     with open("output.json", "w", encoding="utf-8") as output_json:
         json.dump(output, output_json, ensure_ascii=True, indent=2)
 
-    delete_all_listings()
     upload_listings(output)
 
     print()
