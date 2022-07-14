@@ -94,3 +94,7 @@ def scrape_listings():
     print()
     quit_selenium()
     return count
+
+
+if __name__ == "__main__":
+    scrape_listings()

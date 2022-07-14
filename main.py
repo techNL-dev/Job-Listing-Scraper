@@ -2,9 +2,6 @@ import os
 from typing import Union
 from fastapi import FastAPI, Header
 from scrape import scrape_listings
-from dotenv import load_dotenv
-
-load_dotenv()
 
 app = FastAPI()
 

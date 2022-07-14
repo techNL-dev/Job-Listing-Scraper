@@ -1,6 +1,9 @@
 from pymongo.mongo_client import MongoClient
 import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 cluster = MongoClient(os.environ["MONGO_URI"])
