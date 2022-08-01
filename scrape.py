@@ -91,12 +91,6 @@ def scrape_listings():
 
     upload_listings(output)
 
-    revalidate = requests.get(
-        f'https://nl-job-listing-frontend.vercel.app/api/revalidate?secret={os.environ["REVALIDATE_TOKEN"]}',
-        headers=REQUEST_HEADERS,
-    )
-    print(f"Revalidate Status: {str(revalidate.status_code)}")
-
     print()
     quit_selenium()
     return count
