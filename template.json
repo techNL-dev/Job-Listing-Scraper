@@ -1,0 +1,27 @@
+{
+  "name": "",
+  "url": "",
+  "listing": {
+    "parent_selector": null,
+    "class": "",
+    "tag": "div",
+    "indices": []
+  },
+  "details_link": null,
+  "data": {
+    "title": {
+      "selector": "",
+      "indices": []
+    },
+    "location": {
+      "selector": "",
+      "indices": []
+    },
+    "application_date": null
+  },
+  "description": {
+    "selector": "",
+    "indices": []
+  },
+  "apply_link_selector": ""
+}
