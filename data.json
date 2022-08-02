@@ -5,7 +5,8 @@
       "url": "https://verafin.com/careers/",
       "listing": {
         "class": "resource-base resource-job",
-        "tag": "div"
+        "tag": "div",
+        "indices": []
       },
       "details_link": null,
       "data": {
@@ -30,7 +31,8 @@
       "url": "https://www.colabsoftware.com/careers",
       "listing": {
         "class": "job-item w-dyn-item",
-        "tag": "div"
+        "tag": "div",
+        "indices": []
       },
       "details_link": null,
       "data": {
@@ -55,7 +57,8 @@
       "url": "https://getmysa.com/pages/careers/ca",
       "listing": {
         "class": "lever-job",
-        "tag": "li"
+        "tag": "li",
+        "indices": []
       },
       "details_link": "a",
       "data": {
@@ -80,7 +83,8 @@
       "url": "https://jobs.lever.co/milk-moovement",
       "listing": {
         "class": "posting",
-        "tag": "div"
+        "tag": "div",
+        "indices": []
       },
       "details_link": "a",
       "data": {
@@ -99,6 +103,30 @@
         "indices": [0, -1]
       },
       "apply_link_selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
+    },
+    {
+      "name": "Bluedrop ISM",
+      "url": "https://bluedropism.com/careers/",
+      "listing": {
+        "parent_selector": "body > div.elementor.elementor-1335 > div",
+        "class": "elementor-container elementor-column-gap-default",
+        "tag": "div",
+        "indices": [11, 15, 2]
+      },
+      "details_link": "div > div > div.elementor-column.elementor-col-33:nth-child(3) > div > div > div > div > div > a",
+      "data": {
+        "title": {
+          "selector": "body > div.elementor > div > div > section > div > div > div > div > div > section.elementor-section.elementor-inner-section.elementor-element.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div > div.elementor-column.elementor-col-33.elementor-inner-column.elementor-element > div > div > div > div > h2",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.elementor > div > div > section > div > div > div > div > div",
+        "indices": [7, -1]
+      },
+      "apply_link_selector": "body > div.elementor > div > div > section > div > div > div > div > div > section.elementor-section.elementor-inner-section.elementor-element.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div > div.elementor-column.elementor-col-66.elementor-inner-column.elementor-element > div > div > div > div > div > a"
     }
   ]
 }
