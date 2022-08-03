@@ -8,7 +8,7 @@
         "tag": "div",
         "indices": []
       },
-      "details_link": null,
+      "details_page": null,
       "data": {
         "title": {
           "selector": "table > tr > td > div.body > h3",
@@ -34,7 +34,7 @@
         "tag": "div",
         "indices": []
       },
-      "details_link": null,
+      "details_page": null,
       "data": {
         "title": {
           "selector": "div > div > div.job-title-div > h3",
@@ -60,7 +60,10 @@
         "tag": "li",
         "indices": []
       },
-      "details_link": "a",
+      "details_page": {
+        "link_selector": "a",
+        "static": true
+      },
       "data": {
         "title": {
           "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > h2",
@@ -86,7 +89,10 @@
         "tag": "div",
         "indices": []
       },
-      "details_link": "a",
+      "details_page": {
+        "link_selector": "a",
+        "static": true
+      },
       "data": {
         "title": {
           "selector": "body > div.content-wrapper.posting-page > div > div.section-wrapper.accent-section.page-full-width > div > div.posting-headline > h2",
@@ -113,7 +119,10 @@
         "tag": "div",
         "indices": [11, 15, 2]
       },
-      "details_link": "div > div > div.elementor-column.elementor-col-33:nth-child(3) > div > div > div > div > div > a",
+      "details_page": {
+        "link_selector": "div > div > div.elementor-column.elementor-col-33:nth-child(3) > div > div > div > div > div > a",
+        "static": true
+      },
       "data": {
         "title": {
           "selector": "body > div.elementor > div > div > section > div > div > div > div > div > section.elementor-section.elementor-inner-section.elementor-element.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div > div.elementor-column.elementor-col-33.elementor-inner-column.elementor-element > div > div > div > div > h2",
@@ -127,6 +136,60 @@
         "indices": [7, -1]
       },
       "apply_link_selector": "body > div.elementor > div > div > section > div > div > div > div > div > section.elementor-section.elementor-inner-section.elementor-element.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div > div.elementor-column.elementor-col-66.elementor-inner-column.elementor-element > div > div > div > div > div > a"
+    },
+    {
+      "name": "Lemur Vehicle Monitors",
+      "url": "https://ca.bluedriver.com/pages/careers",
+      "listing": {
+        "class": "content-rectangle",
+        "tag": "div",
+        "indices": [0, -1]
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "div.careers-title",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "",
+        "indices": [2]
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Genoa Design International Ltd.",
+      "url": "https://can62e2.dayforcehcm.com/CandidatePortal/en-ca/genoadesign",
+      "listing": {
+        "parent_selector": null,
+        "class": "search-result",
+        "tag": "li",
+        "indices": []
+      },
+      "details_page": {
+        "link_selector": "div.posting-description > a",
+        "static": false,
+        "check_class": "posting-title-container"
+      },
+      "data": {
+        "title": {
+          "selector": "#main-content > div > div:nth-child(1) > div > div.posting-title-container > h1",
+          "indices": []
+        },
+        "location": {
+          "selector": "#main-content > div > div:nth-child(1) > div > div:nth-child(2) > span.job-location",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "#main-content > div > div:nth-child(1) > div > div:nth-child(4)",
+        "indices": []
+      },
+      "apply_link_selector": "#main-content > div > div:nth-child(1) > div > div:nth-child(7) > a"
     }
   ]
 }

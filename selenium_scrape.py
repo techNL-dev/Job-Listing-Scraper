@@ -17,19 +17,19 @@ if os.environ.get("PYTHON_ENV") == "production":
 driver = webdriver.Chrome(executable_path=driver_path, chrome_options=chrome_options)
 
 
-def get_page_body(company):
-    stuff = ""
-    driver.get(company["url"])
+def get_page_body(url: str, check_for_class: str):
+    body = ""
+    driver.get(url)
     delay = 3  # seconds
     try:
         WebDriverWait(driver, delay).until(
-            EC.presence_of_element_located((By.CLASS_NAME, company["listing"]["class"]))
+            EC.presence_of_element_located((By.CLASS_NAME, check_for_class))
         )
         print("Page is ready!")
-        stuff = driver.find_element(By.TAG_NAME, "body").get_attribute("outerHTML")
+        body = driver.find_element(By.TAG_NAME, "body").get_attribute("outerHTML")
     except TimeoutException:
         print("Loading took too much time!")
-    return stuff
+    return body
 
 
 def quit_selenium():
