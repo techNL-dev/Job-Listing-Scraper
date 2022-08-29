@@ -17,14 +17,16 @@ if os.environ.get("PYTHON_ENV") == "production":
 driver = webdriver.Chrome(executable_path=driver_path, chrome_options=chrome_options)
 
 
-def get_page_body(url: str, check_for_class: str):
+def get_page_body(url: str, check: str, is_selector: bool = False):
+    print(url)
     body = ""
     driver.get(url)
-    delay = 3  # seconds
+    delay = 5  # seconds
     try:
-        WebDriverWait(driver, delay).until(
-            EC.presence_of_element_located((By.CLASS_NAME, check_for_class))
-        )
+        by = By.CSS_SELECTOR if is_selector else By.CLASS_NAME
+        print(check)
+        print(by)
+        WebDriverWait(driver, delay).until(EC.presence_of_element_located((by, check)))
         print("Page is ready!")
         body = driver.find_element(By.TAG_NAME, "body").get_attribute("outerHTML")
     except TimeoutException:

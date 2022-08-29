@@ -190,6 +190,425 @@
         "indices": []
       },
       "apply_link_selector": "#main-content > div > div:nth-child(1) > div > div:nth-child(7) > a"
+    },
+    {
+      "name": "Vish Limited",
+      "url": "https://getvish.com/about-vish/careers/",
+      "listing": {
+        "parent_selector": null,
+        "class": "vc_tta-panel",
+        "tag": "div",
+        "indices": []
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "div.vc_tta-panel-heading > h4 > a > span",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "div.wpb_text_column.wpb_content_element > div",
+        "indices": []
+      },
+      "apply_link_selector": "div.vc_tta-panel-heading > h4 > a"
+    },
+    {
+      "name": "HYKE",
+      "url": "https://hykeup.com/careers/",
+      "listing": {
+        "parent_selector": "#content > div > div.elementor.elementor-1519 > section.elementor-section.elementor-top-section.elementor-element.elementor-element-4075066.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div > div > section",
+        "class": "elementor-widget-wrap elementor-element-populated",
+        "tag": "div",
+        "indices": []
+      },
+      "details_page": {
+        "link_selector": "a",
+        "static": true,
+        "check_class": null
+      },
+      "data": {
+        "title": {
+          "selector": "#content > div > div.elementor > section > div.elementor-container.elementor-column-gap-default > div > div > div > div > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "#content > div > div.elementor > section:nth-child(2) > div > div > div > div > div > ul > li:nth-child(2) > span.elementor-icon-list-text",
+          "indices": [10]
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "#content > div > div.elementor > section:nth-child(2) > div > div:nth-child(2) > div",
+        "indices": []
+      },
+      "apply_link_selector": "#content > div > div.elementor > section:nth-child(2) > div > div > div > div > div > ul > li:nth-child(3) > a"
+    },
+    {
+      "name": "Metricsflow",
+      "url": "https://metricsflow.bamboohr.com/jobs/",
+      "listing": {
+        "parent_selector": "#resultDiv > div > ul",
+        "class": "row",
+        "tag": "div",
+        "indices": []
+      },
+      "details_page": {
+        "link_selector": "div > a",
+        "static": false,
+        "check_class": "ResAts__card-content",
+        "is_fragment": true
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__card-content > div:nth-child(1) > div.col-xs-12.col-sm-8.col-md-12 > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.container > div.ResAts__sideBar.js-jobs-sidebar.col-md-4 > div > ul > li:nth-child(1) > div.posInfo__Value",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__Viewport.js-jobs-viewport.js-chosen-container > div > div.ResAts__page.ResAts__description.js-jobs-page.js-jobs-description > div.ResAts__card-content > div > div",
+        "indices": []
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Other Ocean Interactive NL",
+      "url": "https://otherocean.com/careers/",
+      "listing": {
+        "parent_selector": null,
+        "class": null,
+        "tag": "tr",
+        "indices": [1]
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "td.column-1 > a",
+          "indices": []
+        },
+        "location": {
+          "selector": "td.column-3",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": null,
+      "apply_link_selector": "td.column-4 > a"
+    },
+    {
+      "name": "Rally",
+      "url": "https://rallynow.freshteam.com/jobs",
+      "listing": {
+        "parent_selector": null,
+        "class": "heading",
+        "tag": "a",
+        "indices": []
+      },
+      "details_page": {
+        "link_selector": "",
+        "static": true,
+        "check_class": null,
+        "is_fragment": true
+      },
+      "data": {
+        "title": {
+          "selector": "#job-details-header > div > div > div.col-xs-8 > h1",
+          "indices": []
+        },
+        "location": {
+          "selector": "#job-details-header > div > div > div.col-xs-8 > div",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.wrapper > div > div.job-details-content.content > div:nth-child(1)",
+        "indices": []
+      },
+      "apply_link_selector": "#job-details-header > div > div > div.col-xs-4.pull-xs-right.text-right > a"
+    },
+    {
+      "name": "Sequence Bio Inc.",
+      "url": "https://sequencebio.bamboohr.com/jobs/",
+      "listing": {
+        "parent_selector": "#resultDiv > div > ul",
+        "class": "row",
+        "tag": "div",
+        "indices": [1]
+      },
+      "details_page": {
+        "link_selector": "div > a",
+        "static": false,
+        "check_class": "ResAts__card-content",
+        "is_fragment": true
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__card-content > div:nth-child(1) > div.col-xs-12.col-sm-8.col-md-12 > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.container > div.ResAts__sideBar.js-jobs-sidebar.col-md-4 > div > ul > li:nth-child(1) > div.posInfo__Value",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__Viewport.js-jobs-viewport.js-chosen-container > div > div.ResAts__page.ResAts__description.js-jobs-page.js-jobs-description > div.ResAts__card-content > div > div",
+        "indices": []
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Triware Technologies Inc.",
+      "url": "https://triware.ca/careers/",
+      "listing": {
+        "parent_selector": null,
+        "class": "job_listing",
+        "tag": "li",
+        "indices": []
+      },
+      "details_page": {
+        "link_selector": "a",
+        "static": true,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.holder > div > div > div.col-sm-9 > div.title > h3",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.holder > div > div > div.col-sm-9 > div.post-content.custom-padding-right > div > ul > li.location > a",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.holder > div > div > div.col-sm-9 > div.post-content.custom-padding-right > div > div.job_description",
+        "indices": []
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Avalon Holographics",
+      "url": "https://www.avalonholographics.com/careers",
+      "listing": {
+        "parent_selector": null,
+        "class": "html-block",
+        "tag": "div",
+        "indices": [10, 16]
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "div > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "div > h3",
+          "indices": [10]
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "div",
+        "indices": [2]
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Kraken Robotics",
+      "url": "https://krakenrobotics.com/about/careers/",
+      "listing": {
+        "parent_selector": "#jobs_tbody",
+        "class": null,
+        "selector": "#jobs_tbody > tr",
+        "tag": "tr",
+        "indices": [],
+        "find_by_selector": true
+      },
+      "details_page": {
+        "link_selector": "td > strong > a",
+        "static": true,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "#job_details_nav > div > div.job_details_info > span.job_title",
+          "indices": []
+        },
+        "location": {
+          "selector": "#job_details_nav > div > div.job_details_info > span.location",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "#main > section > div > section",
+        "indices": [0, 3]
+      },
+      "apply_link_selector": "#job_details_nav > div > div.job_details_buttons > a"
+    },
+    {
+      "name": "PanGeo Subsea Inc",
+      "url": "https://www.pangeosubsea.com/careers/",
+      "listing": {
+        "parent_selector": "#content > div:nth-child(2) > div > div",
+        "class": "wpb_accordion",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "div > div > h3 > a > span",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "div > div > div > div > div",
+        "indices": []
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Virtual Marine Technology Inc.",
+      "url": "https://www.virtualmarine.ca/careers",
+      "listing": {
+        "parent_selector": "body > div.Site > div.Site-inner > div > main > section > div > div:nth-child(2) > div",
+        "class": "sqs-block-html",
+        "selector": "",
+        "tag": "div",
+        "indices": [0, -1],
+        "find_by_selector": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "div > h1 > strong",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "div",
+        "indices": [1]
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Zorbit's Math by Carnegie Learning",
+      "url": "https://zorbitsmath.com/careers",
+      "listing": {
+        "parent_selector": "#main > div > section > div > div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-4",
+        "class": "MuiCardContent-root",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false
+      },
+      "details_page": {
+        "link_selector": "a",
+        "static": true,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "#jobTitle-row > div > span",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div:nth-child(3) > div > div.content-container > div > div > form > div > div:nth-child(2) > div.row > div > div > div",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "#jobDesc-row > div > span",
+        "indices": []
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Oliver POS",
+      "url": "https://oliverpos.com/company/careers/",
+      "listing": {
+        "parent_selector": "body > div > section:nth-child(2) > div > div",
+        "class": "ct-new-columns",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false
+      },
+      "details_page": {
+        "link_selector": "div:nth-child(2) > a",
+        "static": false,
+        "check_class": "jobsearch-JobInfoHeader-title",
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "#viewJobSSRRoot > div > div > div:nth-child(3) > div > div > div > div > div:nth-child(2) > div > div > h1",
+          "indices": []
+        },
+        "location": {
+          "selector": "#viewJobSSRRoot > div > div > div:nth-child(3) > div > div > div > div > div:nth-child(2) > div > div.jobsearch-CompanyInfoContainer > div > div > div > div:nth-child(2)",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "#jobDescriptionText",
+        "indices": []
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Rally",
+      "url": "https://rallynow.freshteam.com/jobs",
+      "listing": {
+        "parent_selector": "body > div.wrapper > div.content > div:nth-child(1) > div",
+        "class": "show",
+        "selector": "",
+        "tag": "li",
+        "indices": [],
+        "find_by_selector": false
+      },
+      "details_page": {
+        "link_selector": "div:nth-child(2) > div > a",
+        "static": true,
+        "check_class": null,
+        "is_fragment": true
+      },
+      "data": {
+        "title": {
+          "selector": "#job-details-header > div > div > div.col-xs-8 > h1",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "",
+        "indices": []
+      },
+      "apply_link_selector": "#job-details-header > div > div > div.col-xs-4.pull-xs-right.text-right > a"
     }
   ]
 }

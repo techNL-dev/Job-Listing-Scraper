@@ -4,13 +4,16 @@
   "listing": {
     "parent_selector": null,
     "class": "",
+    "selector": "",
     "tag": "div",
-    "indices": []
+    "indices": [],
+    "find_by_selector": false
   },
   "details_page": {
     "link_selector": "",
-    "static": true,
-    "check_class": null
+    "static": false,
+    "check_class": null,
+    "is_fragment": false
   },
   "data": {
     "title": {
