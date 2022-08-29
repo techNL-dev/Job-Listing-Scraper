@@ -22,14 +22,14 @@ def get_listing_data(listing: Tag, data: dict):
     if data == None:
         return None
     # print(listing.select(data["selector"]))
-    print(
-        conditional_slice(
-            listing.select(data["selector"])[0].text.strip(), data["indices"]
-        )
+    data_text = (
+        listing.select(data["selector"])[0].text
+        if data["selector"] != ""
+        else listing.text
     )
-    return conditional_slice(
-        listing.select(data["selector"])[0].text.strip(), data["indices"]
-    )
+    data_text = data_text.strip()
+    print(conditional_slice(data_text, data["indices"]))
+    return conditional_slice(data_text, data["indices"])
 
 
 def get_listing_description(listing: Tag, data: dict):
@@ -43,7 +43,7 @@ def get_listing_description(listing: Tag, data: dict):
         print(listing)
         print(listing.select(data["selector"]))
         description_parent = listing.select(data["selector"])[0]
-    children = description_parent.find_all(recursive=True)
+    children = description_parent.find_all(recursive=data["recursive"])
     children = conditional_slice(children, data["indices"])
     return list(map(lambda x: str(x), children))
 
@@ -57,6 +57,7 @@ def get_link(listing: Tag, selector: str, url: str, is_fragment: bool):
     print(listing.select(selector)[0])"""
     link = None
     if selector == "":
+        print("sdfsdfsds")
         link = listing["href"]
     else:
         link = listing.select(selector)[0]["href"]
@@ -106,7 +107,7 @@ def scrape_listings():
                 {"class": company["listing"]["class"]}
                 if company["listing"]["class"]
                 else None,
-                recursive=False,
+                recursive=company["listing"]["recursive"],
             )
             print(f"{len(listings)} listings found...")
             if len(listings) == 0 or not valid_parent:
@@ -138,7 +139,7 @@ def scrape_listings():
             for listing in conditional_slice(listings, company["listing"]["indices"]):
                 details_link = None
                 listing_data = {}
-                # print(listing)
+                print(listing)
                 if company["details_page"] != None:
                     page_response_text = None
                     details_link = get_link(

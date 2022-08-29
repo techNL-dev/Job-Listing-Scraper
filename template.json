@@ -7,7 +7,8 @@
     "selector": "",
     "tag": "div",
     "indices": [],
-    "find_by_selector": false
+    "find_by_selector": false,
+    "recursive": false
   },
   "details_page": {
     "link_selector": "",
@@ -28,7 +29,8 @@
   },
   "description": {
     "selector": "",
-    "indices": []
+    "indices": [],
+    "recursive": true
   },
   "apply_link_selector": ""
 }

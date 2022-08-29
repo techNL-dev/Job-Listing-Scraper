@@ -605,10 +605,265 @@
         "application_date": null
       },
       "description": {
-        "selector": "",
+        "selector": "body > div.wrapper > div > div.job-details-content.content > div:nth-child(1)",
         "indices": []
       },
       "apply_link_selector": "#job-details-header > div > div > div.col-xs-4.pull-xs-right.text-right > a"
+    },
+    {
+      "name": "Rutter Inc.",
+      "url": "https://rutter.ca/careers/",
+      "listing": {
+        "parent_selector": null,
+        "class": "category-jobs",
+        "selector": "",
+        "tag": "article",
+        "indices": [],
+        "find_by_selector": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "h2",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": null,
+      "apply_link_selector": null
+    },
+    {
+      "name": "C-CORE",
+      "url": "https://c-core.ca/careers/",
+      "listing": {
+        "parent_selector": "body > div.content-blocks > div.boxes > div > div:nth-child(3) > div.box-content",
+        "class": "",
+        "selector": "",
+        "tag": "p",
+        "indices": [2, -1],
+        "find_by_selector": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "a",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": null,
+      "apply_link_selector": null
+    },
+    {
+      "name": "Solace Power Inc",
+      "url": "https://www.solace.ca/life-at-solace",
+      "listing": {
+        "parent_selector": "body > div:nth-child(4) > div.Site-inner.Site-inner--index > div > main > section:nth-child(3) > div > div > div > div > div:nth-child(6)",
+        "class": null,
+        "selector": "",
+        "tag": "a",
+        "indices": [],
+        "find_by_selector": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": null,
+      "apply_link_selector": null
+    },
+    {
+      "name": "Compusult Limited",
+      "url": "https://www.compusult.com/careers",
+      "listing": {
+        "parent_selector": "body > div > div > section > div > div:nth-child(3) > div:nth-child(3)",
+        "class": [
+          "mb-lg-0",
+          "ml-lg-0",
+          "mr-lg-0",
+          "mt-lg-0",
+          "pb-lg-0",
+          "pl-lg-4",
+          "pr-lg-4",
+          "pt-lg-0",
+          "pr-sm-4",
+          "pl-sm-4",
+          "pr-4",
+          "pl-4",
+          "pr-md-4",
+          "pl-md-4"
+        ],
+        "selector": "",
+        "tag": "div",
+        "indices": [0, -1],
+        "find_by_selector": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "div > div > div > h3 > span",
+          "indices": []
+        },
+        "location": {
+          "selector": "div > div > div > span",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "div > div",
+        "indices": []
+      },
+      "apply_link_selector": "div:nth-child(4) > div > div > div > a"
+    },
+    {
+      "name": "Vision33 Inc.",
+      "url": "https://www.vision33.com/join-our-team-listing",
+      "listing": {
+        "parent_selector": null,
+        "class": "cats-job",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false
+      },
+      "details_page": {
+        "link_selector": "div > a",
+        "static": true,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "#root > div > div > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div.row > div.col-12.col-md-8 > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "#root > div > div > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div.row > div.col-12.col-md-8 > span",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "#root > div > div > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div.row > div.col-12.col-md-8 > div",
+        "indices": []
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "HeyOrca Inc.",
+      "url": "https://secure.collage.co/jobs/heyorca/",
+      "listing": {
+        "parent_selector": "body > main > div > div > div",
+        "class": null,
+        "selector": "body > main > div > div > div",
+        "tag": "li",
+        "indices": [],
+        "find_by_selector": true,
+        "recursive": false
+      },
+      "details_page": {
+        "link_selector": "a",
+        "static": true,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "body > main > div > div > div.ATS-position-header > div > div.col.col-9 > h1",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > main > div > div > div.ATS-position-header > div > div.col.col-9 > p > span:nth-child(5)",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > main > div > div > div.ATS-position-description",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": "body > main > div > div > a"
+    },
+    {
+      "name": "BreatheSuite",
+      "url": "https://breathesuite.bamboohr.com/jobs/",
+      "listing": {
+        "parent_selector": "#resultDiv > div > ul",
+        "class": "row",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": {
+        "link_selector": "div > a",
+        "static": false,
+        "check_class": "ResAts__card-content",
+        "is_fragment": true
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__card-content > div:nth-child(1) > div.col-xs-12.col-sm-8.col-md-12 > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.container > div.ResAts__sideBar.js-jobs-sidebar.col-md-4 > div > ul > li:nth-child(1) > div.posInfo__Value",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__Viewport.js-jobs-viewport.js-chosen-container > div > div.ResAts__page.ResAts__description.js-jobs-page.js-jobs-description > div.ResAts__card-content > div > div",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Nucliq Biologics Inc",
+      "url": "",
+      "listing": {
+        "parent_selector": null,
+        "class": "",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": {
+        "link_selector": "",
+        "static": false,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "",
+          "indices": []
+        },
+        "location": {
+          "selector": "",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "",
+        "indices": [],
+        "recursive": false
+      },
+      "apply_link_selector": ""
     }
   ]
 }
