@@ -4,35 +4,40 @@
       "name": "Verafin",
       "url": "https://verafin.com/careers/",
       "listing": {
-        "class": "resource-base resource-job",
+        "class": "resource-job",
         "tag": "div",
-        "indices": []
+        "indices": [],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": null,
       "data": {
         "title": {
-          "selector": "table > tr > td > div.body > h3",
+          "selector": "table > tbody > tr > td > div.body > h3",
           "indices": []
         },
         "location": {
-          "selector": "table > tr > td > div.body > p:nth-child(2)",
+          "selector": "table > tbody > tr > td > div.body > p:nth-child(2)",
           "indices": [10, -1]
         },
         "application_date": null
       },
       "description": {
-        "selector": "table > tr > td > div.body",
-        "indices": [2]
+        "selector": "table > tbody > tr > td > div.body",
+        "indices": [2],
+        "recursive": false
       },
-      "apply_link_selector": "table > tr > td > div.foot > a"
+      "apply_link_selector": "table > tbody > tr > td > div.foot > a"
     },
     {
       "name": "CoLab Software",
       "url": "https://www.colabsoftware.com/careers",
       "listing": {
-        "class": "job-item w-dyn-item",
+        "class": "job-item",
         "tag": "div",
-        "indices": []
+        "indices": [],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": null,
       "data": {
@@ -48,7 +53,8 @@
       },
       "description": {
         "selector": "div > div > div.job-hidden-div > div.job-info-div",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": "div > div > div.job-hidden-div > div.job-button-wrap > a"
     },
@@ -58,7 +64,9 @@
       "listing": {
         "class": "lever-job",
         "tag": "li",
-        "indices": []
+        "indices": [],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": {
         "link_selector": "a",
@@ -77,7 +85,8 @@
       },
       "description": {
         "selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2)",
-        "indices": [0, -1]
+        "indices": [0, -1],
+        "recursive": false
       },
       "apply_link_selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
     },
@@ -87,7 +96,9 @@
       "listing": {
         "class": "posting",
         "tag": "div",
-        "indices": []
+        "indices": [],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": {
         "link_selector": "a",
@@ -106,7 +117,8 @@
       },
       "description": {
         "selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2)",
-        "indices": [0, -1]
+        "indices": [0, -1],
+        "recursive": false
       },
       "apply_link_selector": "body > div.content-wrapper.posting-page > div > div:nth-child(2) > div.section.page-centered.last-section-apply > a"
     },
@@ -115,9 +127,11 @@
       "url": "https://bluedropism.com/careers/",
       "listing": {
         "parent_selector": "body > div.elementor.elementor-1335 > div",
-        "class": "elementor-container elementor-column-gap-default",
+        "class": "elementor-row",
         "tag": "div",
-        "indices": [11, 15, 2]
+        "indices": [11, 15, 2],
+        "recursive": true,
+        "find_by_selector": false
       },
       "details_page": {
         "link_selector": "div > div > div.elementor-column.elementor-col-33:nth-child(3) > div > div > div > div > div > a",
@@ -133,7 +147,8 @@
       },
       "description": {
         "selector": "body > div.elementor > div > div > section > div > div > div > div > div",
-        "indices": [7, -1]
+        "indices": [7, -1],
+        "recursive": false
       },
       "apply_link_selector": "body > div.elementor > div > div > section > div > div > div > div > div > section.elementor-section.elementor-inner-section.elementor-element.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div > div.elementor-column.elementor-col-66.elementor-inner-column.elementor-element > div > div > div > div > div > a"
     },
@@ -143,7 +158,9 @@
       "listing": {
         "class": "content-rectangle",
         "tag": "div",
-        "indices": [0, -1]
+        "indices": [0, -1],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": null,
       "data": {
@@ -156,7 +173,8 @@
       },
       "description": {
         "selector": "",
-        "indices": [2]
+        "indices": [2],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -167,7 +185,9 @@
         "parent_selector": null,
         "class": "search-result",
         "tag": "li",
-        "indices": []
+        "indices": [],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": {
         "link_selector": "div.posting-description > a",
@@ -187,7 +207,8 @@
       },
       "description": {
         "selector": "#main-content > div > div:nth-child(1) > div > div:nth-child(4)",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": "#main-content > div > div:nth-child(1) > div > div:nth-child(7) > a"
     },
@@ -198,7 +219,9 @@
         "parent_selector": null,
         "class": "vc_tta-panel",
         "tag": "div",
-        "indices": []
+        "indices": [],
+        "recursive": true,
+        "find_by_selector": false
       },
       "details_page": null,
       "data": {
@@ -211,7 +234,8 @@
       },
       "description": {
         "selector": "div.wpb_text_column.wpb_content_element > div",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": "div.vc_tta-panel-heading > h4 > a"
     },
@@ -220,14 +244,16 @@
       "url": "https://hykeup.com/careers/",
       "listing": {
         "parent_selector": "#content > div > div.elementor.elementor-1519 > section.elementor-section.elementor-top-section.elementor-element.elementor-element-4075066.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div > div > section",
-        "class": "elementor-widget-wrap elementor-element-populated",
+        "class": "elementor-element-populated",
         "tag": "div",
-        "indices": []
+        "indices": [],
+        "recursive": true,
+        "find_by_selector": false
       },
       "details_page": {
         "link_selector": "a",
-        "static": true,
-        "check_class": null
+        "static": false,
+        "check_class": "site-main"
       },
       "data": {
         "title": {
@@ -242,7 +268,8 @@
       },
       "description": {
         "selector": "#content > div > div.elementor > section:nth-child(2) > div > div:nth-child(2) > div",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": "#content > div > div.elementor > section:nth-child(2) > div > div > div > div > div > ul > li:nth-child(3) > a"
     },
@@ -253,7 +280,9 @@
         "parent_selector": "#resultDiv > div > ul",
         "class": "row",
         "tag": "div",
-        "indices": []
+        "indices": [],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": {
         "link_selector": "div > a",
@@ -274,7 +303,8 @@
       },
       "description": {
         "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__Viewport.js-jobs-viewport.js-chosen-container > div > div.ResAts__page.ResAts__description.js-jobs-page.js-jobs-description > div.ResAts__card-content > div > div",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -285,7 +315,9 @@
         "parent_selector": null,
         "class": null,
         "tag": "tr",
-        "indices": [1]
+        "indices": [1],
+        "recursive": true,
+        "find_by_selector": false
       },
       "details_page": null,
       "data": {
@@ -303,45 +335,15 @@
       "apply_link_selector": "td.column-4 > a"
     },
     {
-      "name": "Rally",
-      "url": "https://rallynow.freshteam.com/jobs",
-      "listing": {
-        "parent_selector": null,
-        "class": "heading",
-        "tag": "a",
-        "indices": []
-      },
-      "details_page": {
-        "link_selector": "",
-        "static": true,
-        "check_class": null,
-        "is_fragment": true
-      },
-      "data": {
-        "title": {
-          "selector": "#job-details-header > div > div > div.col-xs-8 > h1",
-          "indices": []
-        },
-        "location": {
-          "selector": "#job-details-header > div > div > div.col-xs-8 > div",
-          "indices": []
-        },
-        "application_date": null
-      },
-      "description": {
-        "selector": "body > div.wrapper > div > div.job-details-content.content > div:nth-child(1)",
-        "indices": []
-      },
-      "apply_link_selector": "#job-details-header > div > div > div.col-xs-4.pull-xs-right.text-right > a"
-    },
-    {
       "name": "Sequence Bio Inc.",
       "url": "https://sequencebio.bamboohr.com/jobs/",
       "listing": {
         "parent_selector": "#resultDiv > div > ul",
         "class": "row",
         "tag": "div",
-        "indices": [1]
+        "indices": [1],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": {
         "link_selector": "div > a",
@@ -362,7 +364,8 @@
       },
       "description": {
         "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__Viewport.js-jobs-viewport.js-chosen-container > div > div.ResAts__page.ResAts__description.js-jobs-page.js-jobs-description > div.ResAts__card-content > div > div",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -373,7 +376,9 @@
         "parent_selector": null,
         "class": "job_listing",
         "tag": "li",
-        "indices": []
+        "indices": [],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": {
         "link_selector": "a",
@@ -394,7 +399,8 @@
       },
       "description": {
         "selector": "body > div.holder > div > div > div.col-sm-9 > div.post-content.custom-padding-right > div > div.job_description",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -405,7 +411,9 @@
         "parent_selector": null,
         "class": "html-block",
         "tag": "div",
-        "indices": [10, 16]
+        "indices": [10, 16],
+        "recursive": false,
+        "find_by_selector": false
       },
       "details_page": null,
       "data": {
@@ -421,7 +429,8 @@
       },
       "description": {
         "selector": "div",
-        "indices": [2]
+        "indices": [2],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -434,7 +443,8 @@
         "selector": "#jobs_tbody > tr",
         "tag": "tr",
         "indices": [],
-        "find_by_selector": true
+        "find_by_selector": true,
+        "recursive": false
       },
       "details_page": {
         "link_selector": "td > strong > a",
@@ -455,7 +465,8 @@
       },
       "description": {
         "selector": "#main > section > div > section",
-        "indices": [0, 3]
+        "indices": [0, 3],
+        "recursive": false
       },
       "apply_link_selector": "#job_details_nav > div > div.job_details_buttons > a"
     },
@@ -468,7 +479,8 @@
         "selector": "",
         "tag": "div",
         "indices": [],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": null,
       "data": {
@@ -481,7 +493,8 @@
       },
       "description": {
         "selector": "div > div > div > div > div",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -494,7 +507,8 @@
         "selector": "",
         "tag": "div",
         "indices": [0, -1],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": null,
       "data": {
@@ -507,7 +521,8 @@
       },
       "description": {
         "selector": "div",
-        "indices": [1]
+        "indices": [1],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -520,7 +535,8 @@
         "selector": "",
         "tag": "div",
         "indices": [],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": {
         "link_selector": "a",
@@ -541,7 +557,8 @@
       },
       "description": {
         "selector": "#jobDesc-row > div > span",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -554,7 +571,8 @@
         "selector": "",
         "tag": "div",
         "indices": [],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": {
         "link_selector": "div:nth-child(2) > a",
@@ -575,7 +593,8 @@
       },
       "description": {
         "selector": "#jobDescriptionText",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -588,7 +607,8 @@
         "selector": "",
         "tag": "li",
         "indices": [],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": {
         "link_selector": "div:nth-child(2) > div > a",
@@ -606,7 +626,8 @@
       },
       "description": {
         "selector": "body > div.wrapper > div > div.job-details-content.content > div:nth-child(1)",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": "#job-details-header > div > div > div.col-xs-4.pull-xs-right.text-right > a"
     },
@@ -619,7 +640,8 @@
         "selector": "",
         "tag": "article",
         "indices": [],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": null,
       "data": {
@@ -642,7 +664,8 @@
         "selector": "",
         "tag": "p",
         "indices": [2, -1],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": null,
       "data": {
@@ -665,7 +688,8 @@
         "selector": "",
         "tag": "a",
         "indices": [],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": true
       },
       "details_page": null,
       "data": {
@@ -703,7 +727,8 @@
         "selector": "",
         "tag": "div",
         "indices": [0, -1],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": null,
       "data": {
@@ -719,7 +744,8 @@
       },
       "description": {
         "selector": "div > div",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": "div:nth-child(4) > div > div > div > a"
     },
@@ -732,7 +758,8 @@
         "selector": "",
         "tag": "div",
         "indices": [],
-        "find_by_selector": false
+        "find_by_selector": false,
+        "recursive": false
       },
       "details_page": {
         "link_selector": "div > a",
@@ -753,7 +780,8 @@
       },
       "description": {
         "selector": "#root > div > div > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div.row > div.col-12.col-md-8 > div",
-        "indices": []
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": null
     },
@@ -828,42 +856,6 @@
         "recursive": true
       },
       "apply_link_selector": null
-    },
-    {
-      "name": "Nucliq Biologics Inc",
-      "url": "",
-      "listing": {
-        "parent_selector": null,
-        "class": "",
-        "selector": "",
-        "tag": "div",
-        "indices": [],
-        "find_by_selector": false,
-        "recursive": false
-      },
-      "details_page": {
-        "link_selector": "",
-        "static": false,
-        "check_class": null,
-        "is_fragment": false
-      },
-      "data": {
-        "title": {
-          "selector": "",
-          "indices": []
-        },
-        "location": {
-          "selector": "",
-          "indices": []
-        },
-        "application_date": null
-      },
-      "description": {
-        "selector": "",
-        "indices": [],
-        "recursive": false
-      },
-      "apply_link_selector": ""
     }
   ]
 }

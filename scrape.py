@@ -48,7 +48,7 @@ def get_listing_description(listing: Tag, data: dict):
     return list(map(lambda x: str(x), children))
 
 
-def get_link(listing: Tag, selector: str, url: str, is_fragment: bool):
+def get_link(listing: Tag, selector: str, url: str):
     if selector == None:
         return url
     """print(listing)
@@ -61,17 +61,6 @@ def get_link(listing: Tag, selector: str, url: str, is_fragment: bool):
         link = listing["href"]
     else:
         link = listing.select(selector)[0]["href"]
-    # print(link)
-    """if link[-1] == "/":
-        link = link[:-1]
-    if link[0] == "/":
-        link = link[1:]
-    if is_fragment:
-        if url[-1] == "/":
-            url = url[:-1]
-        link = link.split("/")
-        link = url.split("/") + link
-        link = "/".join(link)"""
     link = urljoin(url, link)
     print(link)
     return link
@@ -83,7 +72,8 @@ def scrape_listings():
 
     with open("data.json", "r", encoding="utf-8") as data_json:
         data = json.loads(data_json.read())
-        for company in data["companies"][-1:]:
+        current_company = 8
+        for company in data["companies"]:
             print(company["name"])
             response = requests.get(company["url"], headers=REQUEST_HEADERS)
             soup = BeautifulSoup(response.text, features="html.parser")
@@ -146,7 +136,6 @@ def scrape_listings():
                         listing,
                         company["details_page"]["link_selector"],
                         company["url"],
-                        company["details_page"]["is_fragment"],
                     )
                     if company["details_page"]["static"]:
                         print("static")
@@ -163,6 +152,8 @@ def scrape_listings():
                     page_soup = BeautifulSoup(
                         page_response_text, features="html.parser"
                     )
+                    print()
+                    print(page_soup.select(company["data"]["title"]["selector"]))
                     listing = page_soup
                 for key in company["data"]:
                     print(key)
@@ -175,7 +166,6 @@ def scrape_listings():
                     listing,
                     company.get("apply_link_selector"),
                     details_link if details_link else company["url"],
-                    details_link != None,
                 )
                 listing_data_list.append(listing_data)
             output[company["name"]] = listing_data_list
