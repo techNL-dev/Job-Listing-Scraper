@@ -22,7 +22,7 @@ driver = webdriver.Chrome(executable_path=driver_path, chrome_options=chrome_opt
 
 def get_page_body(url: str, check: str, is_selector: bool = False):
     """Get the body of the spage at the given URL"""
-    print(url)
+    # print(url)
     body = ""
     # Open the given URL in a tab
     driver.get(url)
@@ -30,11 +30,8 @@ def get_page_body(url: str, check: str, is_selector: bool = False):
     try:
         # Is the element to be found specified by Class or CSS Selector?
         by = By.CSS_SELECTOR if is_selector else By.CLASS_NAME
-        print(check)
-        print(by)
         # Wait until a specified element is on screen, or the duration of delay
         WebDriverWait(driver, delay).until(EC.presence_of_element_located((by, check)))
-        print("Page is ready!")
         # Get the outter HTML (the body) of the page
         body = driver.find_element(By.TAG_NAME, "body").get_attribute("outerHTML")
     # If the element is not found after the delay
