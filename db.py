@@ -67,13 +67,16 @@ def upload_listings(data):
     print("Syncing Spreadsheet...")
 
     google_sheets_app_url = os.environ["SHEETS_URL"]
+    print(google_sheets_app_url)
     response = requests.get(f"{google_sheets_app_url}?current=current")
+    print(JSON.stringify(response))
     print(
         "Current Listing Spreadsheet Sync: Succeeded"
         if response.status_code == 200
         else "Current Listing Spreadsheet Sync: Failed"
     )
     response = requests.get(f"{google_sheets_app_url}?current=previous")
+    print(JSON.stringify(response))
     print(
         "Previous Listing Spreadsheet Sync: Succeeded"
         if response.status_code == 200
