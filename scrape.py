@@ -73,7 +73,7 @@ def scrape_listings():
 
     with open("data.json", "r", encoding="utf-8") as data_json:
         data = json.loads(data_json.read())
-        for company in data["companies"]:
+        for company in data["companies"][:2]:
             try:
                 print(company["name"])
                 response = requests.get(company["url"], headers=REQUEST_HEADERS)
