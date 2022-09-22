@@ -95,7 +95,7 @@ def scrape_listings():
                     else None,
                     recursive=company["listing"]["recursive"],
                 )
-                print(f"{len(listings)} listings found...")
+                print(f"{len(listings)} potential listings found...")
                 if len(listings) == 0 or not valid_parent:
                     print("Trying Selenium...")
                     check = (
@@ -115,13 +115,16 @@ def scrape_listings():
                         company["listing"]["tag"],
                         {"class": company["listing"]["class"]},
                     )
-                    print(f"{len(listings)} listings found...")
+                    print(f"{len(listings)} potential listings found...")
                 count += len(listings)
                 listing_data_list = []
+                listings = conditional_slice(listings, company["listing"]["indices"])
                 listing: Tag
-                for listing in conditional_slice(
-                    listings, company["listing"]["indices"]
-                ):
+                actual_listing_count = len(listings)
+                print(f"{actual_listing_count} actual listings found")
+                for i in range(actual_listing_count):
+                    listing = listings[i]
+                    print(f"Scraping {i}/{actual_listing_count}...")
                     details_link = None
                     listing_data = {}
                     # print(listing)
