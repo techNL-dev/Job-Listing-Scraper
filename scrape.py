@@ -30,7 +30,7 @@ def get_listing_data(listing: Tag, data: dict):
         else listing.text
     )
     data_text = data_text.strip()
-    print(conditional_slice(data_text, data["indices"]))
+    # print(conditional_slice(data_text, data["indices"]))
     return conditional_slice(data_text, data["indices"])
 
 
@@ -42,9 +42,9 @@ def get_listing_description(listing: Tag, data: dict):
     if data["selector"] == "":
         description_parent = listing
     else:
-        print()
-        print(listing)
-        print(listing.select(data["selector"]))
+        # print()
+        # print(listing)
+        # print(listing.select(data["selector"]))
         description_parent = listing.select(data["selector"])[0]
     children = description_parent.find_all(recursive=data["recursive"])
     children = conditional_slice(children, data["indices"])
@@ -61,7 +61,7 @@ def get_link(listing: Tag, selector: str, url: str):
     else:
         link = listing.select(selector)[0]["href"]
     link = urljoin(url, link)
-    print(link)
+    # print(link)
     return link
 
 
@@ -124,7 +124,7 @@ def scrape_listings():
                 ):
                     details_link = None
                     listing_data = {}
-                    print(listing)
+                    # print(listing)
                     if company["details_page"] != None:
                         page_response_text = None
                         details_link = get_link(
@@ -133,32 +133,32 @@ def scrape_listings():
                             company["url"],
                         )
                         if company["details_page"]["static"]:
-                            print("static")
+                            # print("static")
                             page_response = requests.get(
                                 details_link,
                                 headers=REQUEST_HEADERS,
                             )
                             page_response_text = page_response.text
                         else:
-                            print("dynamic")
+                            # print("dynamic")
                             page_response_text = get_page_body(
                                 details_link, company["details_page"]["check_class"]
                             )
                         page_soup = BeautifulSoup(
                             page_response_text, features="html.parser"
                         )
-                        print()
-                        print(page_soup.select(company["data"]["title"]["selector"]))
+                        # print()
+                        # print(page_soup.select(company["data"]["title"]["selector"]))
                         listing = page_soup
                     for key in company["data"]:
-                        print(key)
+                        # print(key)
                         listing_data[key] = get_listing_data(
                             listing, company["data"][key]
                         )
                     listing_data["description"] = get_listing_description(
                         listing, company.get("description")
                     )
-                    print(details_link if details_link else company["url"])
+                    # print(details_link if details_link else company["url"])
                     listing_data["apply_link"] = get_link(
                         listing,
                         company.get("apply_link_selector"),
@@ -169,15 +169,16 @@ def scrape_listings():
                 print()
             except:
                 print(f"An error occurred while scraping {company.get('name')}")
+                print()
 
     print(f"Scraped {count} listings in total")
 
     # Write the output of the scrape to a local file
-    # with open("output.json", "w", encoding="utf-8") as output_json:
-    #     json.dump(output, output_json, ensure_ascii=True, indent=2)
+    with open("output.json", "w", encoding="utf-8") as output_json:
+        json.dump(output, output_json, ensure_ascii=True, indent=2)
 
     # Upload the output of the scrape to MongoDB
-    upload_listings(output)
+    # upload_listings(output)
 
     # Close the selenium controlled Chrome browser
     quit_selenium()
