@@ -12,6 +12,7 @@ with open("data.json", "r", encoding="utf-8") as data_json:
     data = json.loads(data_json.read())
     result = map(lambda company: company["name"], data["companies"])
     company_name_list = list(result)
+    company_name_list.sort()
 
 
 @app.get("/")
@@ -33,4 +34,4 @@ def scrape(authorization: Union[str, None] = Header(default=None)):
 
 @app.get("/companies")
 def get_companies():
-    return {"companies": company_name_list}
+    return company_name_list
