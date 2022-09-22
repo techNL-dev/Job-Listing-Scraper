@@ -4,10 +4,12 @@ from datetime import datetime
 from dotenv import load_dotenv
 import requests
 
+# Load environment variables
 load_dotenv()
 
+# Headers to be used when making web requests
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
-
+# Get the cluster, database, and collections
 cluster = MongoClient(os.environ["MONGO_URI"])
 db = cluster["JobListingScraper"]
 listing_collection = db["Listing"]
@@ -15,6 +17,7 @@ previous_listing_collection = db["PreviousListing"]
 
 
 def upload_listings(data):
+    """Upload the given listings"""
     # Initalize a few empty lists
     new_listings = []
     existing_listings = []
@@ -62,12 +65,18 @@ def upload_listings(data):
 
     # Trigger spreadsheet sync
     print("Syncing Spreadsheet...")
-    response = requests.get(
-        "https://script.google.com/macros/s/AKfycbyX_mV9c7EDPvJDRVukhfIat06WvsW-1QKbEC7IbjIZ42dxerh36tMTvG1_ILBhhPsw/exec?current=current"
+
+    google_sheets_app_url = os.environ["SHEETS_URL"]
+    response = requests.get(f"{google_sheets_app_url}?current=current")
+    print(
+        "Current Listing Spreadsheet Sync: Succeeded"
+        if response.status_code == 200
+        else "Current Listing Spreadsheet Sync: Failed"
     )
-    print(response)
-    response = requests.get(
-        "https://script.google.com/macros/s/AKfycbyX_mV9c7EDPvJDRVukhfIat06WvsW-1QKbEC7IbjIZ42dxerh36tMTvG1_ILBhhPsw/exec?current=previous"
+    response = requests.get(f"{google_sheets_app_url}?current=previous")
+    print(
+        "Previous Listing Spreadsheet Sync: Succeeded"
+        if response.status_code == 200
+        else "Previous Listing Spreadsheet Sync: Failed"
     )
-    print(response)
     print("Finished syncing")
