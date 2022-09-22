@@ -10,5 +10,5 @@ jobs:
       - name: Scrape job listings
         run: |
           curl --request GET \
-          --url 'https://nl-job-listing-scraper.herokuapp.com/api' \
+          --url 'https://technl-job-listing-scraper.herokuapp.com/api' \
           --header 'Authorization: ${{ secrets.API_SECRET_KEY }}'
