@@ -3,7 +3,6 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 import requests
-import JSON
 
 # Load environment variables
 load_dotenv()
@@ -70,14 +69,14 @@ def upload_listings(data):
     google_sheets_app_url = os.environ["SHEETS_URL"]
     print(google_sheets_app_url)
     response = requests.get(f"{google_sheets_app_url}?current=current")
-    print(JSON.stringify(response))
+    print(response.text)
     print(
         "Current Listing Spreadsheet Sync: Succeeded"
         if response.status_code == 200
         else "Current Listing Spreadsheet Sync: Failed"
     )
     response = requests.get(f"{google_sheets_app_url}?current=previous")
-    print(JSON.stringify(response))
+    print(response.text)
     print(
         "Previous Listing Spreadsheet Sync: Succeeded"
         if response.status_code == 200
