@@ -6,12 +6,14 @@ from selenium_scrape import get_page_body, quit_selenium
 from urllib.parse import urljoin
 from purifier.purifier import HTMLPurifier
 
+# Headers for web requests
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
-
+# Options for the HTML purifier
 purifier = HTMLPurifier({"div": [], "span": [], "ul": [], "li": []})
 
 
 def conditional_slice(content, slice_indices: list[int]):
+    """Slice something depending on a list of indicies"""
     start_slice = slice_indices[0] if len(slice_indices) > 0 else None
     end_slice = slice_indices[1] if len(slice_indices) > 1 else None
     step_slice = slice_indices[2] if len(slice_indices) > 2 else None
@@ -19,6 +21,7 @@ def conditional_slice(content, slice_indices: list[int]):
 
 
 def get_listing_data(listing: Tag, data: dict):
+    """Get some listing data (title, location, etc...)"""
     if data == None:
         return None
     data_text = (
@@ -32,6 +35,7 @@ def get_listing_data(listing: Tag, data: dict):
 
 
 def get_listing_description(listing: Tag, data: dict):
+    """Get the description of a job listing"""
     if data == None:
         return None
     description_parent = None
@@ -48,6 +52,7 @@ def get_listing_description(listing: Tag, data: dict):
 
 
 def get_link(listing: Tag, selector: str, url: str):
+    """Get the link from the tag, and fix it if it's a fragment"""
     if selector == None:
         return url
     link = None
@@ -61,6 +66,8 @@ def get_link(listing: Tag, selector: str, url: str):
 
 
 def scrape_listings():
+    """Scrape the job listings from the websites in data.json"""
+
     output = {}
     count = 0
 
