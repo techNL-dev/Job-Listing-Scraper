@@ -52,9 +52,9 @@ function doGet(e) {
   sh1.hideColumn(range);
 }
 
-function onEdit(e) {
+function edit(e) {
   // Set up the "state"
-  const previous = e.source.getActiveSheet().getName() !== "Sheet1";
+  const previous = e.source.getActiveSheet().getName() !== "Current";
   const state = DATA[previous ? "previous" : "current"];
   console.log(`Edit ${state["sheetName"]}`);
 
