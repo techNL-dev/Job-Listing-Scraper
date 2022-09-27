@@ -47,8 +47,12 @@ function doGet(e) {
     sh1.appendRow(vals);
   }
 
-  // Hide the column with the object ids
+  // Hide the columns with the object ids and descriptions
   let range = sh1.getRange("A1");
+  sh1.hideColumn(range);
+  range = sh1.getRange("D1");
+  sh1.hideColumn(range);
+  range = sh1.getRange("E1");
   sh1.hideColumn(range);
 }
 
