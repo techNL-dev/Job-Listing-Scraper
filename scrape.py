@@ -133,7 +133,7 @@ def scrape_listings():
     with open("data.json", "r", encoding="utf-8") as data_json:
         data = json.loads(data_json.read())
         # For every company
-        for company in data["companies"][:3]:
+        for company in data["companies"]:
             try:
                 print(company["name"])
                 # Get a soup of the pages body through a request
