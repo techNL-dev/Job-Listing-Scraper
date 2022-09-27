@@ -52,8 +52,10 @@ def get_listing_description(listing: Tag, data: dict):
     children = description_parent.find_all(recursive=data["recursive"])
     # Slice the set of children according to the indices
     children = conditional_slice(children, data["indices"])
-    # Return the set of children mapped into a list
-    return list(map(lambda x: purifier.feed(str(x)), children))
+    # Map the set of children into a list
+    children_list = list(map(lambda x: purifier.feed(str(x)), children))
+    # Return the list as a string, joined by newline characters
+    return "\n".join(children_list)
 
 
 def get_link(listing: Tag, selector: str, url: str):
