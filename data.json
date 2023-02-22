@@ -856,6 +856,41 @@
         "recursive": true
       },
       "apply_link_selector": null
+    },
+    {
+      "name": "Celtx",
+      "url": "https://www.celtx.com/company/careers/",
+      "listing": {
+        "parent_selector": "main",
+        "class": "careers-postings",
+        "tag": "section",
+        "indices": [],
+        "recursive": true,
+        "find_by_selector": false
+      },
+      "details_page": {
+        "link_selector": "a",
+        "static": false,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.wrapper > div.main > div.app_body > div.header > h1.app-title",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.wrapper > div.main > div.app_body > div.header > div.location",
+          "indices": [10, -1]
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.wrapper > div.main > div.app_body > div.content",
+        "indices": [],
+        "recursive": false
+      },
+      "apply_link_selector": null
     }
   ]
 }
