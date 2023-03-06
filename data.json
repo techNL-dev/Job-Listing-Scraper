@@ -891,6 +891,140 @@
         "recursive": false
       },
       "apply_link_selector": null
+    },
+    {
+      "name": "eDNAtec Inc.",
+      "url": "https://ednatec.com/discover/careers/",
+      "listing": {
+        "parent_selector": "body > div.wrap.flex.flex-col.overflow-h.mt0 > div.main-content.flex-auto.overflow-h > main > article > div.flex.flex-col.md-flex-row.mt0.pt4 > div.article-content-wrap.flex-shrink.mx-auto.col12.fit-edge.md-flex.justify-center > div",
+        "class": ["article-content", "relative", "full", "fit"],
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "h2",
+          "indices": []
+        },
+        "location": null,
+        "application_date": {
+          "selector": "p:nth-child(3)",
+          "indices": []
+        }
+      },
+      "description": {
+        "selector": "p:nth-child(1)",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "trophi",
+      "url": "https://www.trophi.ai/careers#open-roles",
+      "listing": {
+        "parent_selector": "body > div.container.wf-section",
+        "class": "career-jobs-wrapper",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "body > div.container.wf-section > div.career-jobs-wrapper > div.career-jobs-block > div.job-item-list > div > div.collection-item > div > h1.job-title",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.container.wf-section > div.career-jobs-wrapper > div.career-jobs-block > div.job-item-list > div > div.collection-item > div > div.job-info > div.job-location > div.job-location-text",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.container.wf-section > div.career-jobs-wrapper > div.career-jobs-block > div.job-item-list > div > div.collection-item > div > div.job-description",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": ""
+    },
+    {
+      "name": "Telelink",
+      "url": "https://www.answering.telelink.ca/site/careers-at-telelink",
+      "listing": {
+        "parent_selector": "body > div.wrap > div.content > div.row > div.columns > ul.showcaseOverview",
+        "class": "cmsi-module-showcase-oddrow",
+        "selector": "",
+        "tag": "li",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": {
+        "link_selector": "li > a",
+        "static": false,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.wrap > div > table.title > tbody > tr > td > h1",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.wrap > div.content > div.row > div.columns > div > div > div > p:nt-child(11)",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.wrap > div.content > div.row > div.columns > div > div > div > p:nt-child(4)",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "Smart Ice",
+      "url": "https://smartice.org/jobs/",
+      "listing": {
+        "parent_selector": "body > section.the-content > section.jobs-section > div.jobs-list",
+        "class": "job-listing",
+        "selector": "div",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": {
+        "link_selector": "h2 > a",
+        "static": false,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.row > div.columns > h1",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.row > div.columns > div > p > strong",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.row > div.columns > div:nth-child(2) > div > ul",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
     }
   ]
 }
