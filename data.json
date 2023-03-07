@@ -927,8 +927,8 @@
       "name": "trophi",
       "url": "https://www.trophi.ai/careers#open-roles",
       "listing": {
-        "parent_selector": "body > div.container.wf-section",
-        "class": "career-jobs-wrapper",
+        "parent_selector": "body > div.container.wf-section > div.career-jobs-wrapper > div.career-jobs-block > div.job-item-list > div.w-dyn-items > div.collection-item",
+        "class": "",
         "selector": "",
         "tag": "div",
         "indices": [],
