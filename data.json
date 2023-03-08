@@ -1028,6 +1028,42 @@
         "recursive": true
       },
       "apply_link_selector": null
+    },
+    {
+      "name": "Infostrux Solutions Inc",
+      "url": "https://infostrux.applytojobs.ca/",
+      "listing": {
+        "parent_selector": null,
+        "class": "job-posting",
+        "selector": "",
+        "tag": "article",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": {
+        "link_selector": "a",
+        "static": false,
+        "check_class": null,
+        "is_fragment": false
+      },
+      "data": {
+        "title": {
+          "selector": "body > article > div.layout-content.mx-4.mb-12.flex.justify-center.sm:mx-6 > div.container > article > section > h1",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > article > div.layout-content.mx-4.mb-12.flex.justify-center.sm:mx-6 > div.container > article > section > div > span",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > article > div.layout-content.mx-4.mb-12.flex.justify-center.sm:mx-6 > div.container > article > section > section",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": "body > article > div.layout-content.mx-4.mb-12.flex.justify-center.sm:mx-6 > div.container > article > section:nth-child(2) > a"
     }
   ]
 }
