@@ -1064,6 +1064,34 @@
         "recursive": true
       },
       "apply_link_selector": "body > article > div.layout-content.mx-4.mb-12.flex.justify-center.sm:mx-6 > div.container > article > section:nth-child(2) > a"
+    },
+    {
+      "name": "nucliqbio",
+      "url": "https://www.nucliqbio.ca/career.html",
+      "listing": {
+        "parent_selector": "body > div.section.z-bigger.background-gradient-dark > div > div > div > div > div",
+        "class": "",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "body > div.section.z-bigger.background-gradient-dark > div > div > div > div > div > div > font > center > h3 > font",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "body > div.section.z-bigger.background-gradient-dark > div > div > div > div > div > div > font > p",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
     }
   ]
 }
