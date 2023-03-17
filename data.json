@@ -1120,6 +1120,33 @@
         "recursive": true
       },
       "apply_link_selector": null
+    },
+    {
+      "name": "PolyUnity",
+      "url": "https://www.linkedin.com/jobs/search?keywords=&location=St%20John%E2%80%99s%2C%20Newfoundland%20and%20Labrador%2C%20Canada&locationId=&geoId=104233796&f_TPR=&distance=25&f_C=28837299&position=1&pageNum=0",
+      "listing": {
+        "parent_selector": "body > div.base-serp-page > div > main > section > ul > li",
+        "class": "job-search-card",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "body > div.base-serp-page > div > section > div.details-pane__content.details-pane__content--show > section > div > div > div > a > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.base-serp-page > div > section > div.details-pane__content.details-pane__content--show > section > div > div > div > span.topcard__flavor.topcard__flavor--bullet",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": null,
+      "apply_link_selector": ""
     }
   ]
 }
