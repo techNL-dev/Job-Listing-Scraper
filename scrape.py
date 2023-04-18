@@ -5,6 +5,7 @@ from db import upload_listings
 from selenium_scrape import get_page_body, quit_selenium
 from urllib.parse import urljoin
 from purifier.purifier import HTMLPurifier
+from categories import categories
 
 # Headers for web requests
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -12,7 +13,7 @@ REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
 purifier = HTMLPurifier({"div": [], "span": [], "ul": [], "li": []})
 
 
-def conditional_slice(content, slice_indices: list[int]):
+def conditional_slice(content, slice_indices: "list[int]"):
     """Slice something depending on a list of indicies"""
     start_slice = slice_indices[0] if len(slice_indices) > 0 else None
     end_slice = slice_indices[1] if len(slice_indices) > 1 else None
@@ -57,6 +58,12 @@ def get_listing_description(listing: Tag, data: dict):
     # Return the list as a string, joined by newline characters
     return "\n".join(children_list)
 
+def get_category(title: str):
+    title = title.lower()
+    for category in categories:
+        if category["keyword"] in title:
+            return category["title"]
+    return "Other"
 
 def get_link(listing: Tag, selector: str, url: str):
     """Get the link from the tag, and fix it if it's a fragment"""
@@ -113,6 +120,9 @@ def scrape_listing(company: dict, listing: Tag):
     # Get the description and add it to the data object
     listing_data["description"] = get_listing_description(
         listing, company.get("description")
+    )
+    listing_data["category"] = get_category(
+        listing_data["title"]
     )
     # Get the application link and add it to the data object
     listing_data["apply_link"] = get_link(
@@ -193,7 +203,7 @@ def scrape_listings():
                 listings = conditional_slice(listings, company["listing"]["indices"])
                 listing: Tag
                 actual_listing_count = len(listings)
-                print(f"{actual_listing_count} listings found...")
+                print(f"{actual_listing_count} listings found... {listings}")
                 # For each listing found
                 for i in range(actual_listing_count):
                     listing = listings[i]
@@ -211,7 +221,7 @@ def scrape_listings():
 
     print(f"Scraped {count} listings in total")
 
-    # Write the output of the scrape to a local file
+    # Write the output of the scrape to a local file (uncomment the next to lines to test & see output)
     # with open("output.json", "w", encoding="utf-8") as output_json:
     #     json.dump(output, output_json, ensure_ascii=True, indent=2)
 
