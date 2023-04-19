@@ -5,7 +5,6 @@ from db import upload_listings
 from selenium_scrape import get_page_body, quit_selenium
 from urllib.parse import urljoin
 from purifier.purifier import HTMLPurifier
-from categories import categories
 
 # Headers for web requests
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -60,10 +59,12 @@ def get_listing_description(listing: Tag, data: dict):
 
 def get_category(title: str):
     title = title.lower()
-    for category in categories:
-        if category["keyword"] in title:
-            return category["title"]
-    return "Other"
+    with open("categories.json", "r", encoding="utf-8") as categories_json:
+        cat = json.loads(categories_json.read())
+        for category in cat["categories"]:
+            if any(keyword in title for keyword in category["keywords"]):
+                return category["title"]
+        return "Other"
 
 def get_link(listing: Tag, selector: str, url: str):
     """Get the link from the tag, and fix it if it's a fragment"""
