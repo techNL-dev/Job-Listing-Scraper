@@ -209,7 +209,7 @@ def scrape_listings():
                 listings = conditional_slice(listings, company["listing"]["indices"])
                 listing: Tag
                 actual_listing_count = len(listings)
-                print(f"{actual_listing_count} listings found... {listings}")
+                print(f"{actual_listing_count} listings found...")
                 # For each listing found
                 for i in range(actual_listing_count):
                     listing = listings[i]
