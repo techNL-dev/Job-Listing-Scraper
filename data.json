@@ -914,6 +914,39 @@
       },
       "description": null,
       "apply_link_selector": ""
+    },
+    {
+      "name": "Smart Ice",
+      "url": "https://smartice.org/jobs/",
+      "listing": {
+        "parent_selector": "body > section.the-content > section.jobs-section > div.jobs-list",
+        "class": "job-listing",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": {
+        "link_selector": "a",
+        "static": true,
+        "check_class": null,
+        "is_fragment": true
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.row > div.columns > h1",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "div:nth-child(2)",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
     }
   ]
 }
