@@ -947,6 +947,37 @@
         "recursive": true
       },
       "apply_link_selector": null
+    },
+    {
+      "name": "eDNAtec Inc.",
+      "url": "https://ednatec.com/discover/careers/",
+      "listing": {
+        "parent_selector": "body > div.wrap.flex.flex-col.overflow-h.mt0 > div.main-content.flex-auto.overflow-h > main > article > div.flex.flex-col.md-flex-row.mt0.pt4 > div.article-content-wrap.flex-shrink.mx-auto.col12.fit-edge.md-flex.justify-center > div",
+        "class": ["article-content", "relative", "full", "fit"],
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "h2",
+          "indices": []
+        },
+        "location": null,
+        "application_date": {
+          "selector": "p:nth-child(6)",
+          "indices": []
+        }
+      },
+      "description": {
+        "selector": "",
+        "indices": [],
+        "recursive": false
+      },
+      "apply_link_selector": null
     }
   ]
 }
