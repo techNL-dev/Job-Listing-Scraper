@@ -859,6 +859,34 @@
         "recursive": true
       },
       "apply_link_selector": null
+    },
+    {
+      "name": "FocusFS",
+      "url": "https://focusfs.com/careers/",
+      "listing": {
+        "parent_selector": "body > main > article > section:nth-child(3) > div > div > div:nth-child(1) > ul",
+        "class": null,
+        "selector": "body > main > article > section:nth-child(3) > div > div > div:nth-child(1) > ul",
+        "tag": "li",
+        "indices": [],
+        "find_by_selector": true,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "strong",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
     }
   ]
 }
