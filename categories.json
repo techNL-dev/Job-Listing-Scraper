@@ -23,7 +23,7 @@
         {"title": "Management",
             "keywords": [
                 "director",
-                "vp",
+                " vp ",
                 "team lead",
                 "manager"
             ]
@@ -31,13 +31,13 @@
         {"title": "Software Developer",
             "keywords": [
                 "developer",
-                "aws",
+                " aws ",
                 "programmer",
                 "software engineer",
                 "devops",
                 "full stack",
                 "cloud",
-                "qa",
+                " qa ",
                 "quality assurance"
             ]
         },
@@ -52,7 +52,7 @@
             "keywords": [
                 "customer",
                 "educator",
-                "cx"
+                " cx "
             ]
         },
         {"title": "Finance",
@@ -80,7 +80,7 @@
         {"title": "Consulting",
             "keywords": [
                 "consultant",
-                "sap",
+                " sap ",
                 "consulting"
             ]
         },
@@ -95,8 +95,8 @@
         {"title": "Design",
             "keywords": [
                 "design",
-                "ui",
-                "ux",
+                " ui ",
+                " ux ",
                 "designer",
                 "artist",
                 "animator"
@@ -118,7 +118,7 @@
         },
         {"title": "Human Recources",
             "keywords": [
-                "hr",
+                " hr ",
                 "human recources",
                 "people",
                 "culture",
@@ -128,8 +128,8 @@
         {"title": "Data",
             "keywords": [
                 "data",
-                "ai",
-                "ml",
+                " ai ",
+                " ml ",
                 "computational",
                 "bioinformatician"
             ]
