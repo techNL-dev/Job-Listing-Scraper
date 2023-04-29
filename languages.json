@@ -1,0 +1,57 @@
+{"languages": [ 
+        {"language": "HTML",
+            "keywords": [
+                "html",
+                "html5"
+            ]
+        },
+        {"language": "CSS",
+            "keywords": [
+                "css",
+                "css3"
+            ]
+        },
+        {"language": "React",
+            "keywords": [
+                "react",
+                "reactnative"
+            ]
+        },
+        {"language": "Javascript",
+            "keywords": [
+                "javascript"
+            ]
+        },
+        {"language": "Java",
+            "keywords": [
+                "java"
+            ]
+        },
+        {"language": "Python",
+            "keywords": [
+                "python"
+            ]
+        },
+        {"language": "Scala",
+            "keywords": [
+                "scala"
+            ]
+        },
+        {"language": "Redux",
+            "keywords": [
+                "redux"
+            ]
+        },
+        {"language": "Typescript",
+            "keywords": [
+                "typescript"
+            ]
+        },
+        {"language": "AWS",
+            "keywords": [
+                " aws, ",
+                " aws ",
+                "amazon web services"
+            ]
+        }
+              ]}

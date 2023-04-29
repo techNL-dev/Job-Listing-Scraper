@@ -1,37 +1,36 @@
 {
-  "companies": [
-    {
-      "name": "Verafin",
-      "url": "https://jobs.lever.co/verafin",
-      "listing": {
-        "class": "posting",
-        "tag": "div",
-        "indices": [],
-        "recursive": false,
-        "find_by_selector": false
-      },
-      "details_page": {
-        "link_selector": "a",
-        "static": true
-      },
-      "data": {
-        "title": {
-          "selector": "body > div.content-wrapper.posting-page > div.content > div.section-wrapper.accent-section.page-full-width > div.section.page-centered.posting-header > div.posting-headline > h2",
-          "indices": []
-        },
-        "location": {
-          "selector": "body > div.content-wrapper.posting-page > div.content > div.section-wrapper.accent-section.page-full-width > div.section.page-centered.posting-header > div.posting-headline > div.posting-categories > div.location",
-          "indices": []
-        },
-        "application_date": null
-      },
-      "description": {
-        "selector": "body > div.content-wrapper.posting-page > div.content > div:nth-child(2) > div:nth-child(1)",
-        "indices": [],
-        "recursive": false
-      },
-      "apply_link_selector": "body > div.content-wrapper.posting-page > div.content > div:nth-child(2) > div.last-section-apply > a"
+  "companies": [{
+    "name": "Verafin",
+    "url": "https://jobs.lever.co/verafin",
+    "listing": {
+      "class": "posting",
+      "tag": "div",
+      "indices": [],
+      "recursive": false,
+      "find_by_selector": false
     },
+    "details_page": {
+      "link_selector": "a",
+      "static": true
+    },
+    "data": {
+      "title": {
+        "selector": "body > div.content-wrapper.posting-page > div.content > div.section-wrapper.accent-section.page-full-width > div.section.page-centered.posting-header > div.posting-headline > h2",
+        "indices": []
+      },
+      "location": {
+        "selector": "body > div.content-wrapper.posting-page > div.content > div.section-wrapper.accent-section.page-full-width > div.section.page-centered.posting-header > div.posting-headline > div.posting-categories > div.location",
+        "indices": []
+      },
+      "application_date": null
+    },
+    "description": {
+      "selector": "body > div.content-wrapper.posting-page > div.content > div:nth-child(2)",
+      "indices": [],
+      "recursive": false
+    },
+    "apply_link_selector": "body > div.content-wrapper.posting-page > div.content > div:nth-child(2) > div.last-section-apply > a"
+  },
     {
       "name": "CoLab Software",
       "url": "https://www.colabsoftware.com/careers",

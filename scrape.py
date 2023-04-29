@@ -6,6 +6,9 @@ from selenium_scrape import get_page_body, quit_selenium
 from urllib.parse import urljoin
 from purifier.purifier import HTMLPurifier
 
+# import functions from untils folder
+from utils.get_lanaguages import get_lanaguages
+
 # Headers for web requests
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
 # Options for the HTML purifier
@@ -129,6 +132,10 @@ def scrape_listing(company: dict, listing: Tag):
     # Get the job category based on the title and add it to the data object
     listing_data["category"] = get_category(
         listing_data["title"]
+    )
+    # Get the required languages from the job description, if applicable, and add it to the data object
+    listing_data["languages"] = get_lanaguages(
+        listing_data["description"], "languages.json"
     )
     # Get the application link and add it to the data object
     listing_data["apply_link"] = get_link(
