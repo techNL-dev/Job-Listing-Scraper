@@ -1,36 +1,34 @@
 {
-  "companies": [{
-    "name": "Verafin",
-    "url": "https://jobs.lever.co/verafin",
-    "listing": {
-      "class": "posting",
-      "tag": "div",
-      "indices": [],
-      "recursive": false,
-      "find_by_selector": false
-    },
-    "details_page": {
-      "link_selector": "a",
-      "static": true
-    },
-    "data": {
-      "title": {
-        "selector": "body > div.content-wrapper.posting-page > div.content > div.section-wrapper.accent-section.page-full-width > div.section.page-centered.posting-header > div.posting-headline > h2",
-        "indices": []
+  "companies": [
+    {
+      "name": "Verafin",
+      "url": "https://verafin.com/careers/",
+      "listing": {
+        "class": "resource-job",
+        "tag": "div",
+        "indices": [],
+        "recursive": false,
+        "find_by_selector": false
       },
-      "location": {
-        "selector": "body > div.content-wrapper.posting-page > div.content > div.section-wrapper.accent-section.page-full-width > div.section.page-centered.posting-header > div.posting-headline > div.posting-categories > div.location",
-        "indices": []
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "table > tbody > tr > td > div.body > h3",
+          "indices": []
+        },
+        "location": {
+          "selector": "table > tbody > tr > td > div.body > p:nth-child(2)",
+          "indices": [10, -1]
+        },
+        "application_date": null
       },
-      "application_date": null
+      "description": {
+        "selector": "table > tbody > tr > td > div.body",
+        "indices": [2],
+        "recursive": false
+      },
+      "apply_link_selector": "table > tbody > tr > td > div.foot > a"
     },
-    "description": {
-      "selector": "body > div.content-wrapper.posting-page > div.content > div:nth-child(2)",
-      "indices": [],
-      "recursive": false
-    },
-    "apply_link_selector": "body > div.content-wrapper.posting-page > div.content > div:nth-child(2) > div.last-section-apply > a"
-  },
     {
       "name": "CoLab Software",
       "url": "https://www.colabsoftware.com/careers",
