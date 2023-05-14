@@ -12,7 +12,7 @@ REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
 purifier = HTMLPurifier({"div": [], "span": [], "ul": [], "li": []})
 
 
-def conditional_slice(content, slice_indices: "list[int]"):
+def conditional_slice(content, slice_indices: list[int]):
     """Slice something depending on a list of indicies"""
     start_slice = slice_indices[0] if len(slice_indices) > 0 else None
     end_slice = slice_indices[1] if len(slice_indices) > 1 else None
@@ -56,6 +56,7 @@ def get_listing_description(listing: Tag, data: dict):
     children_list = list(map(lambda x: purifier.feed(str(x)), children))
     # Return the list as a string, joined by newline characters
     return "\n".join(children_list)
+
 
 def get_link(listing: Tag, selector: str, url: str):
     """Get the link from the tag, and fix it if it's a fragment"""
