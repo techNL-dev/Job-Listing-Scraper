@@ -2,32 +2,35 @@
   "companies": [
     {
       "name": "Verafin",
-      "url": "https://verafin.com/careers/",
+      "url": "https://jobs.lever.co/verafin",
       "listing": {
-        "class": "resource-job",
+        "class": "posting",
         "tag": "div",
         "indices": [],
         "recursive": false,
         "find_by_selector": false
       },
-      "details_page": null,
+      "details_page": {
+        "link_selector": "a",
+        "static": true
+      },
       "data": {
         "title": {
-          "selector": "table > tbody > tr > td > div.body > h3",
+          "selector": "body > div.content-wrapper.posting-page > div.content > div.section-wrapper.accent-section.page-full-width > div.section.page-centered.posting-header > div.posting-headline > h2",
           "indices": []
         },
         "location": {
-          "selector": "table > tbody > tr > td > div.body > p:nth-child(2)",
-          "indices": [10, -1]
+          "selector": "body > div.content-wrapper.posting-page > div.content > div.section-wrapper.accent-section.page-full-width > div.section.page-centered.posting-header > div.posting-headline > div.posting-categories > div.location",
+          "indices": []
         },
         "application_date": null
       },
       "description": {
-        "selector": "table > tbody > tr > td > div.body",
-        "indices": [2],
+        "selector": "body > div.content-wrapper.posting-page > div.content > div:nth-child(2) > div:nth-child(1)",
+        "indices": [],
         "recursive": false
       },
-      "apply_link_selector": "table > tbody > tr > td > div.foot > a"
+      "apply_link_selector": "body > div.content-wrapper.posting-page > div.content > div:nth-child(2) > div.last-section-apply > a"
     },
     {
       "name": "CoLab Software",
@@ -854,6 +857,125 @@
         "selector": "body > div.container > div.ResAts__card.col-md-8.baseColorBg-before.js-jobs-left > div.ResAts__Viewport.js-jobs-viewport.js-chosen-container > div > div.ResAts__page.ResAts__description.js-jobs-page.js-jobs-description > div.ResAts__card-content > div > div",
         "indices": [],
         "recursive": true
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "FocusFS",
+      "url": "https://focusfs.com/careers/",
+      "listing": {
+        "parent_selector": "body > main > article > section:nth-child(3) > div > div > div:nth-child(1) > ul",
+        "class": null,
+        "selector": "body > main > article > section:nth-child(3) > div > div > div:nth-child(1) > ul",
+        "tag": "li",
+        "indices": [],
+        "find_by_selector": true,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "strong",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "PolyUnity",
+      "url": "https://www.linkedin.com/jobs/search?keywords=&location=St%20John%E2%80%99s%2C%20Newfoundland%20and%20Labrador%2C%20Canada&locationId=&geoId=104233796&f_TPR=&distance=25&f_C=28837299&position=1&pageNum=0",
+      "listing": {
+        "parent_selector": "body > div.base-serp-page > div > main > section > ul > li",
+        "class": "job-search-card",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "body > div.base-serp-page > div > section > div.details-pane__content.details-pane__content--show > section > div > div > div > a > h2",
+          "indices": []
+        },
+        "location": {
+          "selector": "body > div.base-serp-page > div > section > div.details-pane__content.details-pane__content--show > section > div > div > div > span.topcard__flavor.topcard__flavor--bullet",
+          "indices": []
+        },
+        "application_date": null
+      },
+      "description": null,
+      "apply_link_selector": ""
+    },
+    {
+      "name": "Smart Ice",
+      "url": "https://smartice.org/jobs/",
+      "listing": {
+        "parent_selector": "body > section.the-content > section.jobs-section > div.jobs-list",
+        "class": "job-listing",
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": {
+        "link_selector": "a",
+        "static": true,
+        "check_class": null,
+        "is_fragment": true
+      },
+      "data": {
+        "title": {
+          "selector": "body > div.row > div.columns > h1",
+          "indices": []
+        },
+        "location": null,
+        "application_date": null
+      },
+      "description": {
+        "selector": "div:nth-child(2)",
+        "indices": [],
+        "recursive": true
+      },
+      "apply_link_selector": null
+    },
+    {
+      "name": "eDNAtec Inc.",
+      "url": "https://ednatec.com/discover/careers/",
+      "listing": {
+        "parent_selector": "body > div.wrap.flex.flex-col.overflow-h.mt0 > div.main-content.flex-auto.overflow-h > main > article > div.flex.flex-col.md-flex-row.mt0.pt4 > div.article-content-wrap.flex-shrink.mx-auto.col12.fit-edge.md-flex.justify-center > div",
+        "class": ["article-content", "relative", "full", "fit"],
+        "selector": "",
+        "tag": "div",
+        "indices": [],
+        "find_by_selector": false,
+        "recursive": false
+      },
+      "details_page": null,
+      "data": {
+        "title": {
+          "selector": "h2",
+          "indices": []
+        },
+        "location": null,
+        "application_date": {
+          "selector": "p:nth-child(6)",
+          "indices": []
+        }
+      },
+      "description": {
+        "selector": "",
+        "indices": [],
+        "recursive": false
       },
       "apply_link_selector": null
     }
