@@ -6,6 +6,9 @@ from selenium_scrape import get_page_body, quit_selenium
 from urllib.parse import urljoin
 from purifier.purifier import HTMLPurifier
 
+# import functions from untils folder
+from utils.get_category import get_category
+
 # Headers for web requests
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
 # Options for the HTML purifier
@@ -57,18 +60,6 @@ def get_listing_description(listing: Tag, data: dict):
     # Return the list as a string, joined by newline characters
     return "\n".join(children_list)
 
-def get_category(title: str):
-    # Gets the job title and makes it lower case for easier comparison to categories dictionary 
-    title = title.lower()
-    # Opens categories dictionary file
-    with open("categories.json", "r", encoding="utf-8") as categories_json:
-        cat = json.loads(categories_json.read())
-        # Adds category tag based on keywords in the title of the job
-        for category in cat["categories"]:
-            if any(keyword in title for keyword in category["keywords"]):
-                return category["title"]
-        # if the job title has none of the keywords return the 'other' category tag
-        return "Other"
 
 def get_link(listing: Tag, selector: str, url: str):
     """Get the link from the tag, and fix it if it's a fragment"""
@@ -146,8 +137,8 @@ def scrape_listings():
     count = 0
 
     # Open the json file and load in its data
-    with open("data.json", "r", encoding="utf-8") as data_json:
-        data = json.loads(data_json.read())
+    with open("test.json", "r", encoding="utf-8") as test_json:
+        data = json.loads(test_json.read())
         # For every company
         for company in data["companies"]:
             try:
@@ -228,8 +219,8 @@ def scrape_listings():
     print(f"Scraped {count} listings in total")
 
     # Write the output of the scrape to a local file (uncomment the next to lines to test & see output)
-    # with open("output.json", "w", encoding="utf-8") as output_json:
-    #     json.dump(output, output_json, ensure_ascii=True, indent=2)
+    with open("output.json", "w", encoding="utf-8") as output_json:
+        json.dump(output, output_json, ensure_ascii=True, indent=2)
 
     # Upload the output of the scrape to MongoDB
     upload_listings(output)
