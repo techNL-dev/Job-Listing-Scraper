@@ -57,19 +57,6 @@ def get_listing_description(listing: Tag, data: dict):
     # Return the list as a string, joined by newline characters
     return "\n".join(children_list)
 
-def get_category(title: str):
-    # Gets the job title and makes it lower case for easier comparison to categories dictionary 
-    title = title.lower()
-    # Opens categories dictionary file
-    with open("categories.json", "r", encoding="utf-8") as categories_json:
-        cat = json.loads(categories_json.read())
-        # Adds category tag based on keywords in the title of the job
-        for category in cat["categories"]:
-            if any(keyword in title for keyword in category["keywords"]):
-                return category["title"]
-        # if the job title has none of the keywords return the 'other' category tag
-        return "Other"
-
 def get_link(listing: Tag, selector: str, url: str):
     """Get the link from the tag, and fix it if it's a fragment"""
     # If there's no selector just return the URL
@@ -125,10 +112,6 @@ def scrape_listing(company: dict, listing: Tag):
     # Get the description and add it to the data object
     listing_data["description"] = get_listing_description(
         listing, company.get("description")
-    )
-    # Get the job category based on the title and add it to the data object
-    listing_data["category"] = get_category(
-        listing_data["title"]
     )
     # Get the application link and add it to the data object
     listing_data["apply_link"] = get_link(
