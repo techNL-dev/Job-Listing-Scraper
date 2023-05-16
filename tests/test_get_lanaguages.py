@@ -12,7 +12,7 @@ class TestGetLanaguages(unittest.TestCase):
         """
         data = "Minimum of five year of experience using a variety of development tools, including .NET (C#) , ASP.Net – MVC or ASP.Net Core, SQL, JavaScript front end frameworks, Angular, HTML5, Single Page Web Application Development."
         result = get_lanaguages(data, "../languages.json")
-        self.assertEqual(result, ["HTML", "Javascript", "Java"])
+        self.assertEqual(result, [".NET", "Angular", "ASP.NET Core", "C#", "HTML", "Java", "Javascript", "SQL"])
 
 if __name__ == '__main__':
     unittest.main()
