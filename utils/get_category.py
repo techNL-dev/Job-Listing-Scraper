@@ -1,10 +1,10 @@
 import json
 
-def get_category(title: str):
+def get_category(title: str, cat_file_location: str):
     # Gets the job title and makes it lower case for easier comparison to categories dictionary 
     title = title.lower()
     # Opens categories dictionary file
-    with open("categories.json", "r", encoding="utf-8") as categories_json:
+    with open(cat_file_location, "r", encoding="utf-8") as categories_json:
         cat = json.loads(categories_json.read())
         # Adds category tag based on keywords in the title of the job
         for category in cat["categories"]:

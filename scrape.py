@@ -119,7 +119,7 @@ def scrape_listing(company: dict, listing: Tag):
     )
     # Get the job category based on the title and add it to the data object
     listing_data["category"] = get_category(
-        listing_data["title"]
+        listing_data["title"], "categories.json"
     )
     # Get the application link and add it to the data object
     listing_data["apply_link"] = get_link(
@@ -137,8 +137,8 @@ def scrape_listings():
     count = 0
 
     # Open the json file and load in its data
-    with open("test.json", "r", encoding="utf-8") as test_json:
-        data = json.loads(test_json.read())
+    with open("data.json", "r", encoding="utf-8") as data_json:
+        data = json.loads(data_json.read())
         # For every company
         for company in data["companies"]:
             try:
@@ -219,8 +219,8 @@ def scrape_listings():
     print(f"Scraped {count} listings in total")
 
     # Write the output of the scrape to a local file (uncomment the next to lines to test & see output)
-    with open("output.json", "w", encoding="utf-8") as output_json:
-        json.dump(output, output_json, ensure_ascii=True, indent=2)
+    # with open("output.json", "w", encoding="utf-8") as output_json:
+    #     json.dump(output, output_json, ensure_ascii=True, indent=2)
 
     # Upload the output of the scrape to MongoDB
     upload_listings(output)
