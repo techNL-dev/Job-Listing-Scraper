@@ -1,0 +1,716 @@
+{"languages": [ 
+        {"language": ".NET",
+            "keywords": [
+                ".NET",
+                ".net"
+            ]
+        },
+        {"language": "AlienVault",
+            "keywords": [
+                "alienvault",
+                "alien vault"
+            ]
+        },
+        {"language": "Amplify",
+            "keywords": [
+                "amplify"
+            ]
+        },
+        {"language": "Angular",
+            "keywords": [
+                "angular"
+            ]
+        },
+        {"language": "Ansible",
+            "keywords": [
+                "ansible"
+            ]
+        },
+        {"language": "AppSync",
+            "keywords": [
+                "appsync",
+                "app sync"
+            ]
+        },
+        {"language": "ARM64",
+            "keywords": [
+                "arm64",
+                "arm 64"
+            ]
+        },
+        {"language": "ASP.NET Core",
+            "keywords": [
+                "asp.net core"
+            ]
+        },
+        {"language": "Athena",
+            "keywords": [
+                "athena"
+            ]
+        },
+        {"language": "AuthO",
+            "keywords": [
+                "autho",
+                "auth0"
+            ]
+        },
+        {"language": "AWS",
+            "keywords": [
+                " aws, ",
+                " aws ",
+                "amazon web services"
+            ]
+        },
+        {"language": "AWS Connect",
+            "keywords": [
+                "aws connect",
+                "amazon web services connect"
+            ]
+        },
+        {"language": "Azure",
+            "keywords": [
+                "azure"
+            ]
+        },
+        {"language": "Azure DevOps",
+            "keywords": [
+                "azure devops"
+            ]
+        },
+        {"language": "Big!uery",
+            "keywords": [
+                "bigquery"
+            ]
+        },
+        {"language": "Blazor",
+            "keywords": [
+                "blazor"
+            ]
+        },
+        {"language": "Blendor",
+            "keywords": [
+                "blendor"
+            ]
+        },
+        {"language": "C",
+            "keywords": [
+                " c ",
+                " c, "
+            ]
+        },
+        {"language": "C#",
+            "keywords": [
+                "c#"
+            ]
+        },
+        {"language": "C++",
+            "keywords": [
+                "c++"
+            ]
+        },
+        {"language": "Chakra UI",
+            "keywords": [
+                "charkra ui",
+                "charkraui"
+            ]
+        },
+        {"language": "CircleCI",
+            "keywords": [
+                "circleci",
+                "circle ci"
+            ]
+        },
+        {"language": "CloudFormation",
+            "keywords": [
+                "cloudformation",
+                "cloud formation"
+            ]
+        },
+        {"language": "CodeBuild",
+            "keywords": [
+                "codebuild",
+                "code build"
+            ]
+        },
+        {"language": "Containers",
+            "keywords": [
+                "containers"
+            ]
+        },
+        {"language": "Cordova",
+            "keywords": [
+                "cordova"
+            ]
+        },
+        {"language": "CSS",
+            "keywords": [
+                "css",
+                "css3"
+            ]
+        },
+        {"language": "Cuda",
+            "keywords": [
+                " cuda ",
+                " cuda, "
+            ]
+        },
+        {"language": "Cypress",
+            "keywords": [
+                "cypress"
+            ]
+        },
+        {"language": "Dask",
+            "keywords": [
+                "dask"
+            ]
+        },
+        {"language": "Data Lakes",
+            "keywords": [
+                "data lakes",
+                "datalakes"
+            ]
+        },
+        {"language": "Databricks",
+            "keywords": [
+                "databricks",
+                "data bricks"
+            ]
+        },
+        {"language": "DirectX",
+            "keywords": [
+                "directx"
+            ]
+        },
+        {"language": "Docker",
+            "keywords": [
+                "docker"
+            ]
+        },
+        {"language": "DynamoDB",
+            "keywords": [
+                "dynamodb",
+                "dynamo db"
+            ]
+        },
+        {"language": "EC2",
+            "keywords": [
+                "ec2"
+            ]
+        },
+        {"language": "Expo",
+            "keywords": [
+                " expo ",
+                " expo, "
+            ]
+        },
+        {"language": "Express",
+            "keywords": [
+                "express"
+            ]
+        },
+        {"language": "F#",
+            "keywords": [
+                "F#"
+            ]
+        },
+        {"language": "Fargate",
+            "keywords": [
+                "fargate"
+            ]
+        },
+        {"language": "FastAPI",
+            "keywords": [
+                "fastapi",
+                "fast api"
+            ]
+        },
+        {"language": "Firebase",
+            "keywords": [
+                "firebase"
+            ]
+        },
+        {"language": "Firestore",
+            "keywords": [
+                "firestore"
+            ]
+        },
+        {"language": "Flask",
+            "keywords": [
+                "flask"
+            ]
+        },
+        {"language": "GCP",
+            "keywords": [
+                " gcp ",
+                " gcp, "
+            ]
+        },
+        {"language": "GCP Cloud Run",
+            "keywords": [
+                "gcp cloud run"
+            ]
+        },
+        {"language": "git",
+            "keywords": [
+                " git ",
+                " git, "
+            ]
+        },
+        {"language": "GitHub Actions",
+            "keywords": [
+                "github actions"
+            ]
+        },
+        {"language": "GitLab",
+            "keywords": [
+                "gitlab"
+            ]
+        },
+        {"language": "GLSL",
+            "keywords": [
+                "glsl"
+            ]
+        },
+        {"language": "Glue",
+            "keywords": [
+                "glue"
+            ]
+        },
+        {"language": "Gradle",
+            "keywords": [
+                "gradle"
+            ]
+        },
+        {"language": "GraphQL",
+            "keywords": [
+                "graphlql"
+            ]
+        },
+        {"language": "GWT",
+            "keywords": [
+                " gwt ",
+                " gwt, "
+            ]
+        },
+        {"language": "HLA 1.3",
+            "keywords": [
+                "hla 1.3"
+            ]
+        },
+        {"language": "HSLS",
+            "keywords": [
+                " hsls ",
+                " hsls, "
+            ]
+        },
+        {"language": "HTML",
+            "keywords": [
+                "html",
+                "html5"
+            ]
+        },
+        {"language": "Ionic",
+            "keywords": [
+                "ionic"
+            ]
+        },
+        {"language": "Java",
+            "keywords": [
+                "java"
+            ]
+        },
+        {"language": "Javascript",
+            "keywords": [
+                "javascript"
+            ]
+        },
+        {"language": "Jenkins",
+            "keywords": [
+                "jenkins"
+            ]
+        },
+        {"language": "Jest",
+            "keywords": [
+                "jest"
+            ]
+        },
+        {"language": "Jupyter Notebooks",
+            "keywords": [
+                "jupyter notebooks"
+            ]
+        },
+        {"language": "Knex",
+            "keywords": [
+                "knex"
+            ]
+        },
+        {"language": "Kubernetes",
+            "keywords": [
+                "kubernetes"
+            ]
+        },
+        {"language": "Lambda",
+            "keywords": [
+                "lambda"
+            ]
+        },
+        {"language": "Mapbox GL JS",
+            "keywords": [
+                "mapbox gl js",
+                "mapbox"
+            ]
+        },
+        {"language": "MariaDB",
+            "keywords": [
+                "mariadb",
+                "maria db"
+            ]
+        },
+        {"language": "MaterialUI",
+            "keywords": [
+                "materialui",
+                " mui ",
+                " mui, "
+            ]
+        },
+        {"language": "Metal",
+            "keywords": [
+                "metal"
+            ]
+        },
+        {"language": "Metlab",
+            "keywords": [
+                "metlab"
+            ]
+        },
+        {"language": "MIPI Cameras",
+            "keywords": [
+                "mipi cameras"
+            ]
+        },
+        {"language": "MongoDB",
+            "keywords": [
+                "mongodb"
+            ]
+        },
+        {"language": "Moodle",
+            "keywords": [
+                "moodle"
+            ]
+        },
+        {"language": "Neo4j",
+            "keywords": [
+                "neo4j"
+            ]
+        },
+        {"language": "Node.js",
+            "keywords": [
+                "node.js",
+                "node"
+            ]
+        },
+        {"language": "NoSQL",
+            "keywords": [
+                "nosql"
+            ]
+        },
+        {"language": "NotificationAPI",
+            "keywords": [
+                "notificationapi"
+            ]
+        },
+        {"language": "numpy",
+            "keywords": [
+                "numpy"
+            ]
+        },
+        {"language": "Objective-C",
+            "keywords": [
+                "objective-c"
+            ]
+        },
+        {"language": "Octave",
+            "keywords": [
+                "octave"
+            ]
+        },
+        {"language": "OpenGL",
+            "keywords": [
+                "opengl"
+            ]
+        },
+        {"language": "Pandas",
+            "keywords": [
+                "pandas"
+            ]
+        },
+        {"language": "Perl",
+            "keywords": [
+                "perl"
+            ]
+        },
+        {"language": "PHP",
+            "keywords": [
+                " php ",
+                " php, "
+            ]
+        },
+        {"language": "Plastic SCM",
+            "keywords": [
+                "plastic scm"
+            ]
+        },
+        {"language": "PostGIS",
+            "keywords": [
+                "postgis"
+            ]
+        },
+        {"language": "PostgresSQL",
+            "keywords": [
+                "postgres",
+                "prosgressql"
+            ]
+        },
+        {"language": "Prisma",
+            "keywords": [
+                "prisma"
+            ]
+        },
+        {"language": "ProseMirror",
+            "keywords": [
+                "prosemirror"
+            ]
+        },
+        {"language": "Python",
+            "keywords": [
+                "python"
+            ]
+        },
+        {"language": "QT",
+            "keywords": [
+                " qt ",
+                " qt, "
+            ]
+        },
+        {"language": "R",
+            "keywords": [
+                " r ", 
+                " r, "
+            ]
+        },
+        {"language": "rapids.ai",
+            "keywords": [
+                "rapids.ai",
+                "rapids"
+            ]
+        },
+        {"language": "React Router",
+            "keywords": [
+                "react router"
+            ]
+        },
+        {"language": "React.js",
+            "keywords": [
+                "react",
+                "reactnative",
+                "react.js"
+            ]
+        },
+        {"language": "Redis",
+            "keywords": [
+                "redis"
+            ]
+        },
+        {"language": "Redux",
+            "keywords": [
+                "redux"
+            ]
+        },
+        {"language": "RESTful API",
+            "keywords": [
+                "restful api"
+            ]
+        },
+        {"language": "ROS",
+            "keywords": [
+                " ros ",
+                " ros, "
+            ]
+        },
+        {"language": "Ruby",
+            "keywords": [
+                "ruby"
+            ]
+        },
+        {"language": "S3",
+            "keywords": [
+                "s3"
+            ]
+        },
+        {"language": "Salesforce",
+            "keywords": [
+                "salesforce"
+            ]
+        },
+        {"language": "SAM",
+            "keywords": [
+                " sam ",
+                " sam, "
+            ]
+        },
+        {"language": "Scala",
+            "keywords": [
+                "scala"
+            ]
+        },
+        {"language": "Scikit-learn",
+            "keywords": [
+                "scikit-learn",
+                "scikit learn"
+            ]
+        },
+        {"language": "Scipy",
+            "keywords": [
+                "scipy"
+            ]
+        },
+        {"language": "Selenium",
+            "keywords": [
+                "selenium"
+            ]
+        },
+        {"language": "Serverless",
+            "keywords": [
+                "serverless"
+            ]
+        },
+        {"language": "SimpleDB",
+            "keywords": [
+                "simpledb"
+            ]
+        },
+        {"language": "Skaffold",
+            "keywords": [
+                "skaffold"
+            ]
+        },
+        {"language": "Sophos",
+            "keywords": [
+                "sophos"
+            ]
+        },
+        {"language": "SQL",
+            "keywords": [
+                " sql ",
+                " sql, "
+            ]
+        },
+        {"language": "SQLModel",
+            "keywords": [
+                "sqlmodel"
+            ]
+        },
+        {"language": "STAC (Spatio Temporal Asset Catalogs)",
+            "keywords": [
+                " stac ",
+                " stac, ",
+                "spatio temporal asset catalogs"
+            ]
+        },
+        {"language": "Storybook",
+            "keywords": [
+                "storybook"
+            ]
+        },
+        {"language": "Syncfusion",
+            "keywords": [
+                "syncfusion"
+            ]
+        },
+        {"language": "Tailwind",
+            "keywords": [
+                "tailwind"
+            ]
+        },
+        {"language": "TanStack Query",
+            "keywords": [
+                "tanstack query"
+            ]
+        },
+        {"language": "Terraform",
+            "keywords": [
+                "terraform"
+            ]
+        },
+        {"language": "Tersorflow",
+            "keywords": [
+                "tersorflow"
+            ]
+        },
+        {"language": "Typescript",
+            "keywords": [
+                "typescript"
+            ]
+        },
+        {"language": "UE4",
+            "keywords": [
+                "ue4"
+            ]
+        },
+        {"language": "Umbrella",
+            "keywords": [
+                "umbrella"
+            ]
+        },
+        {"language": "Unity",
+            "keywords": [
+                "unity"
+            ]
+        },
+        {"language": "Unity Cloud Build",
+            "keywords": [
+                "unity cloud build"
+            ]
+        },
+        {"language": "Unity3D",
+            "keywords": [
+                "unity3d"
+            ]
+        },
+        {"language": "Unreal",
+            "keywords": [
+                "unreal"
+            ]
+        },
+        {"language": "Vercel",
+            "keywords": [
+                "vercel"
+            ]
+        },
+        {"language": "Vert.x",
+            "keywords": [
+                "vert.x"
+            ]
+        },
+        {"language": "Vulkan",
+            "keywords": [
+                "vulkan"
+            ]
+        },
+        {"language": "Wordpress",
+            "keywords": [
+                "wordpress"
+            ]
+        },
+        {"language": "WPF",
+            "keywords": [
+                " wpf ",
+                " wpf, "
+            ]
+        },
+        {"language": "Xamarin",
+            "keywords": [
+                "xamarin"
+            ]
+        }
+              ]}

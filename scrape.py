@@ -6,13 +6,16 @@ from selenium_scrape import get_page_body, quit_selenium
 from urllib.parse import urljoin
 from purifier.purifier import HTMLPurifier
 
+# import functions from untils folder
+from utils.get_lanaguages import get_lanaguages
+
 # Headers for web requests
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0"}
 # Options for the HTML purifier
 purifier = HTMLPurifier({"div": [], "span": [], "ul": [], "li": []})
 
 
-def conditional_slice(content, slice_indices: list[int]):
+def conditional_slice(content, slice_indices: "list[int]"):
     """Slice something depending on a list of indicies"""
     start_slice = slice_indices[0] if len(slice_indices) > 0 else None
     end_slice = slice_indices[1] if len(slice_indices) > 1 else None
@@ -114,6 +117,10 @@ def scrape_listing(company: dict, listing: Tag):
     listing_data["description"] = get_listing_description(
         listing, company.get("description")
     )
+    # Get the required languages from the job description, if applicable, and add it to the data object
+    listing_data["languages"] = get_lanaguages(
+        listing_data["description"], "languages.json"
+    )
     # Get the application link and add it to the data object
     listing_data["apply_link"] = get_link(
         listing,
@@ -211,7 +218,7 @@ def scrape_listings():
 
     print(f"Scraped {count} listings in total")
 
-    # Write the output of the scrape to a local file
+    # Write the output of the scrape to a local file (uncomment the next to lines to test & see output)
     # with open("output.json", "w", encoding="utf-8") as output_json:
     #     json.dump(output, output_json, ensure_ascii=True, indent=2)
 
